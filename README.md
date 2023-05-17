@@ -1,12 +1,12 @@
 # Documentation for labs
 ## Lab 1 - Python Experiments
-###1.1 Install different tools/packages on Ubuntu DEVASC-LABVM:
+### 1.1 Install different tools/packages on Ubuntu DEVASC-LABVM:
 -	Python 3.8 and PIP
 -	Visual Studio Code
 -	Jupyter Notebook
 -	Python IDLE
 
-###•	Task preparation and implementation:
+### •	Task preparation and implementation:
 1.	Update & grade to prevent errors:  sudo apt upgrade && sudo apt upgrade
 2.	Install python & pip3(already done): sudo apt install python3 python3-pip
 3.	Install vscode(already done): sudo snap install –classic code
