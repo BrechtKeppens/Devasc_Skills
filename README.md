@@ -89,7 +89,53 @@ Install the VM
 A
 
 ## Lab 3 - Python Review - Development tools and Classes
-A
+###Part 1: Python Programming Review
+
+Lab netacad: Cisco DEVNET 1.3.3
+
+Important commands:
+
+#### Type(): Returns the variable type 
+`string=”e” `
+`type(string) => class’str’`
+#### f{}: Input variable value in string
+`f”The string contains {string}”`
+#### .2f : decimals
+`pi = “{:.2f}”.format(num) ` gives 3.14
+#### List: [] list of items
+`testlist = [“one”,”two”,”three”]`
+`del testlist[x]` removes list item at position x
+#### Dictionary: {} dictionary of items
+`Routers: {“R1”:”10.1.1.1”,”R2”:10.2.2.1”}`
+#### Len() command: number of items in list
+`len(testlist)` returns 3
+4.	Input(“enter a value”): asks for input with the prompt enter a value:
+5.	Print(“test”): print test to the console
+6.	If else/elif function example with input & print:
+age = string(input(’Enter your age:”))
+if age >=18:
+	print(“You are 18 years of age or older”)
+elif age >=16:
+		print(“You are 16 years of age or older”)
+	else:
+		print(“You are under 16 years of age”)
+
+7.	For loop example: print all items in a list
+namelist[“Brecht”,”Rick”,”Gert”]
+
+for name in namelist:
+print(name)
+8.	While loop example: count to 10
+a = 10
+b = 0
+While a>b:
+	print(b)
+	b=b+1
+9.	Open(“test.txt”) opens a file named text.txt
+
+	
+
+
 
 ## Lab 4 - Network Infrastructure and troubleshooting
 A
