@@ -59,8 +59,7 @@ If Jupyter gives errors when installed using `pip install jupyter`, try the foll
 - Then install Jupyter: `python -m pip install jupyter`
 
 #### • Task verification:
-Verification steps here
-
+![Lab 1 - Python Experiments Task 3 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task3_Verification_1.png)
 
 ### 1.4 Install different tools/packages on Ubuntu 22.04.01 LTS (deep dive exercise) ++
 
@@ -86,8 +85,7 @@ Install the VM
 - If Jupyter doesn't work, try `sudo apt install jupyter` instead of using `pip`.
 
 #### • Task verification:
-Verification steps here
-
+![Lab 1 - Python Experiments Task 4 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task4_Verification_1.png)
 ## Lab 2 - Explore rest APIs with API-simulator and postman
 A
 
