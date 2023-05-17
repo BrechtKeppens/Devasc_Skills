@@ -97,37 +97,51 @@ A
 ## Lab 5 - Software Development and Design Content
 Useful commands:
 ### Part 1: Software Version Control with Git
-#### Git config –global {user.name/user.email} “email/name” 
-	Puts email/name in the git config
-#### Git config –list
-	Lists current config for git
-#### Git status 
-	Displays status of the git files in a directory
-#### Git add
-	Adds a file to github repo
-#### Git commit (-m “message”)
-	Commits changes to the github repo, add -m to add a message
-#### Git log
-	Show all commits in the branch		
-#### Git diff
-	Compare 2 commits
-#### Git branch (name)
-	Add a branch
-#### Git branch
-	Display all branches for the repo
-#### Git branch -d
-	Delete a branch
-#### Git checkout
-	Switch between branches
-#### Git merge
-	Merge the contents of 2 branches
-#### Git push
-	Pushes file to github repository
-#### Git Remote add origin <url>
-	Add a git url as a remote alias 
+Git config –global {user.name/user.email} “email/name”
 
-#### Sed -I ‘s/word1/word2/’ filename
-	Replaces word1 with word2 in a file
+#### Explanation: Puts email/name in the git config.
+Git config –list
+
+#### Explanation: Lists current config for git.
+Git status
+
+#### Explanation: Displays the status of the git files in a directory.
+Git add
+
+#### Explanation: Adds a file to the GitHub repository.
+Git commit (-m "message")
+
+#### Explanation: Commits changes to the GitHub repository. Use -m to add a commit message.
+Git log
+
+#### Explanation: Shows all commits in the branch.
+Git diff
+
+#### Explanation: Compares two commits.
+Git branch (name)
+
+#### Explanation: Adds a branch.
+Git branch
+
+#### Explanation: Displays all branches for the repository.
+Git branch -d
+
+#### Explanation: Deletes a branch.
+Git checkout
+
+#### Explanation: Switches between branches.
+Git merge
+
+#### Explanation: Merges the contents of two branches.
+Git push
+
+#### Explanation: Pushes files to the GitHub repository.
+Git remote add origin <url>
+
+#### Explanation: Adds a git URL as a remote alias.
+
+Sed -I ‘s/word1/word2/’ filename
+#### Explanation: Replaces word1 with word2 in a file.
 
 
 ## Lab 6 - Python Network automation with Netmiko
