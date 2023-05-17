@@ -97,50 +97,50 @@ A
 ## Lab 5 - Software Development and Design Content
 Useful commands:
 ### Part 1: Software Version Control with Git
-Git config –global {user.name/user.email} “email/name”
+`git config –global {user.name/user.email} “email/name`
 
 #### Explanation: Puts email/name in the git config.
-Git config –list
+`git config –list`
 
 #### Explanation: Lists current config for git.
-Git status
+`git status`
 
 #### Explanation: Displays the status of the git files in a directory.
-Git add
+`git add`
 
 #### Explanation: Adds a file to the GitHub repository.
-Git commit (-m "message")
+`git commit (-m "message")`
 
 #### Explanation: Commits changes to the GitHub repository. Use -m to add a commit message.
-Git log
+`git log`
 
 #### Explanation: Shows all commits in the branch.
-Git diff
+`git diff`
 
 #### Explanation: Compares two commits.
-Git branch (name)
+`git branch (name)`
 
 #### Explanation: Adds a branch.
-Git branch
+`git branch`
 
 #### Explanation: Displays all branches for the repository.
-Git branch -d
+`git branch -d`
 
 #### Explanation: Deletes a branch.
-Git checkout
+`git checkout`
 
 #### Explanation: Switches between branches.
-Git merge
+`git merge`
 
 #### Explanation: Merges the contents of two branches.
-Git push
+`git push`
 
 #### Explanation: Pushes files to the GitHub repository.
-Git remote add origin <url>
+`git remote add origin <url>`
 
 #### Explanation: Adds a git URL as a remote alias.
 
-Sed -I ‘s/word1/word2/’ filename
+`sed -I ‘s/word1/word2/’ filename`
 #### Explanation: Replaces word1 with word2 in a file.
 
 
