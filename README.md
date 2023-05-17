@@ -97,5 +97,23 @@ A
 ## Lab 5 - Software Development and Design Content
 A
 
-## Lab 6 - Python Network automation with netmiko
-[ExternalFile.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/ExternalFile.py)
+## Lab 6 - Python Network automation with Netmiko
+
+### Part 1: Connecting to a single iOS device
+- Sending single show command
+- Sending multiple show commands
+- Send multiple configuration commands to a single device
+
+### Part 2: Connect to multiple IOS devices
+- Send show commands to multiple devices
+- Send configuration commands to multiple devices
+- Run show commands and save the output
+- Backup the device configurations
+- Configure a subset of Interfaces
+- Send device configuration using an external file
+- Connect using a Python Dictionary
+- Execute a script with Functions or classes
+- Execute a script with statements (if, ifelse, else)
+
+### Part 4: Create an exciting script as a network engineer
+- Create an exciting and challenging script that a network engineer in a programmable era would use every day. Surprise your lecturer!
