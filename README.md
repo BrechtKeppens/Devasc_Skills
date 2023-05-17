@@ -107,10 +107,13 @@ A
 ### Part 2: Connect to multiple IOS devices
 - Send show commands to multiple devices
 - Send configuration commands to multiple devices
+[SendingConfigToMultiple.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/SendingConfigToMultiple.py)
 - Run show commands and save the output
 - Backup the device configurations
+[BackupDeviceconfigs.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/BackupDeviceconfigs.py)
 - Configure a subset of Interfaces
 - Send device configuration using an external file
+[ExternalFile.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/ExternalFile.py)
 - Connect using a Python Dictionary
 - Execute a script with Functions or classes
 - Execute a script with statements (if, ifelse, else)
