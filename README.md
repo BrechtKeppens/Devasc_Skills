@@ -135,7 +135,7 @@ elif age >=16:
 `namelist[“Brecht”,”Rick”,”Gert”]
 
 for name in namelist:
-print(name)`Prints every name in namelist
+print(name)` Prints every name in namelist
 
 #### While loop example
 `a = 10
