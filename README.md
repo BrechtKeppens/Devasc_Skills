@@ -19,8 +19,7 @@
 Running `sudo apt upgrade && update` prevents errors from occurring.
 
 #### • Task verification:
-![Lab 1 - Python Experiments Task Verification](Lab%201%20-%20Python%20Experiments/Task1_Verification_1.png)
-
+![Lab 1 - Python Experiments Task Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task1_Verification_1.png)
 
 ### 1.2 Run geopy and timedate Python Scripts on the DEVASC-LABVM using the tools above (1.1):
 - timedate.py
