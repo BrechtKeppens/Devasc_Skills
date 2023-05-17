@@ -98,3 +98,4 @@ A
 A
 
 ## Lab 6 - Python Network automation with netmiko
+[ExternalFile.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/ExternalFile.py)
