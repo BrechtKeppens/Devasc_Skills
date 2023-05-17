@@ -122,32 +122,38 @@ Important commands:
 `print(“test”)` prints test
 
 #### if else/elif function example with input & print:
-`age = string(input(’Enter your age:”))
+```
+age = string(input(’Enter your age:”))
 if age >=18:
 	print(“You are 18 years of age or older”)
 elif age >=16:
 		print(“You are 16 years of age or older”)
 	else:
 		print(“You are under 16 years of age”)
-`You will be prompted to enter your age. It will display whether you are over 18, between 16-18 or under 16 years of age.
+```
+You will be prompted to enter your age. It will display whether you are over 18, between 16-18 or under 16 years of age.
 
 #### For loop example: print all items in a list
-`namelist[“Brecht”,”Rick”,”Gert”]
+```
+namelist[“Brecht”,”Rick”,”Gert”]
 
 for name in namelist:
-print(name)` Prints every name in namelist
+print(name)
+``` 
+Prints every name in namelist
 
 #### While loop example
-`a = 10
+```
+a = 10
 b = 0
 While a>b:
 	print(b)
-	b=b+1` counts to 10
+	b=b+1
+```
+counts to 10
 	
 #### Open(“") opens a file
 `x = open(“test.txt”) opens a file named text.txt and stores it in x`
-
-	
 
 
 
