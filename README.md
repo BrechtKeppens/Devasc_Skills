@@ -98,21 +98,29 @@ Important commands:
 #### Type(): Returns the variable type 
 `string=”e” `
 `type(string) => class’str’`
+
 #### f{}: Input variable value in string
 `f”The string contains {string}”` returns "The string contains e"
+
 #### .2f : Decimals
 `pi = “{:.2f}”.format(num) ` returns 3.14
+
 #### List: [] List of items
 `testlist = [“one”,”two”,”three”]`
 `del testlist[x]` Removes list item at position x
+
 #### Dictionary: {} Dictionary of items
 `Routers: {“R1”:”10.1.1.1”,”R2”:10.2.2.1”}`
+
 #### Len(): Number of items in list
 `len(testlist)` returns 3
+
 #### Input: Reads user input:
 `input(“enter a value”)` asks for input with the prompt enter a value:
+
 #### Print(“"): prints value to the console
 `print(“test”)` prints test
+
 #### if else/elif function example with input & print:
 `age = string(input(’Enter your age:”))
 if age >=18:
@@ -122,17 +130,20 @@ elif age >=16:
 	else:
 		print(“You are under 16 years of age”)
 `You will be prompted to enter your age. It will display whether you are over 18, between 16-18 or under 16 years of age.
+
 #### For loop example: print all items in a list
 `namelist[“Brecht”,”Rick”,”Gert”]
 
 for name in namelist:
 print(name)`Prints every name in namelist
+
 #### While loop example
 `a = 10
 b = 0
 While a>b:
 	print(b)
 	b=b+1` counts to 10
+	
 #### Open(“") opens a file
 `x = open(“test.txt”) opens a file named text.txt and stores it in x`
 
