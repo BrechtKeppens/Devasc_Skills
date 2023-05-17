@@ -13,37 +13,29 @@
 4.	Install jupyter notebook: sudo pip3 install jupyter
 5.	Install idle: sudo apt install idle3
 
-•	Task troubleshooting:
+### •	Task troubleshooting:
 Sudo apt upgrade && update prevents errors from occuring
 
-•	Task verification:  
-•	 
+### •	Task verification:  
+	Lab 1 - Python Experiments/Task1_Verification_1.png 
+	
 
-
-
-
-
-1.2 Run geopy and timedate Python Scipts on the DEVASC-LABVM using the tools above (1.1):
-
-
+### 1.2 Run geopy and timedate Python Scipts on the DEVASC-LABVM using the tools above (1.1):
 -	timedate.py
-
 -	geopy-geocoders_location.py
-
 -	location.py
 
-Document your findings in 3 steps:
-
-•	Task preparation and implementation:
+### •	Task preparation and implementation:
 1.	Clone repo: git clone https://github.com/wleppens/PythonExperiments
 2.	Run scripts > python3 <script>
 
-•	Task troubleshooting:
-Geopy: No module named folium, geopy 
-	Pip3 install geopy
-	Pip3 install folium
+### •	Task troubleshooting:
+	Geopy: No module named folium, geopy 
+1.	Pip3 install geopy
+2.	Pip3 install folium
 
-•	Task verification:    
+### •	Task verification:    
+	Lab 1 - Python Experiments/Task2_Verification_1.png
 
 
 
