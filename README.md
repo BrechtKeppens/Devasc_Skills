@@ -96,37 +96,37 @@ A
 
 ## Lab 5 - Software Development and Design Content
 Useful commands:
-###Part 1: Software Version Control with Git
-####Git config –global {user.name/user.email} “email/name” 
+### Part 1: Software Version Control with Git
+#### Git config –global {user.name/user.email} “email/name” 
 	Puts email/name in the git config
-####Git config –list
+#### Git config –list
 	Lists current config for git
-####Git status 
+#### Git status 
 	Displays status of the git files in a directory
-####Git add
+#### Git add
 	Adds a file to github repo
-####Git commit (-m “message”)
+#### Git commit (-m “message”)
 	Commits changes to the github repo, add -m to add a message
-####Git log
+#### Git log
 	Show all commits in the branch		
-####Git diff
+#### Git diff
 	Compare 2 commits
-####Git branch (name)
+#### Git branch (name)
 	Add a branch
-####Git branch
+#### Git branch
 	Display all branches for the repo
-####Git branch -d
+#### Git branch -d
 	Delete a branch
-####Git checkout
+#### Git checkout
 	Switch between branches
-####Git merge
+#### Git merge
 	Merge the contents of 2 branches
-####Git push
+#### Git push
 	Pushes file to github repository
-####Git Remote add origin <url>
-	Add a git url as a remote alias
+#### Git Remote add origin <url>
+	Add a git url as a remote alias 
 
-####Sed -I ‘s/word1/word2/’ filename
+#### Sed -I ‘s/word1/word2/’ filename
 	Replaces word1 with word2 in a file
 
 
