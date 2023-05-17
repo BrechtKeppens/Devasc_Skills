@@ -28,12 +28,12 @@ Running `sudo apt upgrade && update` prevents errors from occurring.
 
 #### • Task preparation and implementation:
 1. Clone repo: `git clone https://github.com/wleppens/PythonExperiments`
-2. Run scripts: `python3 <script>`
+2. Run scripts using: `python3 <script>.py`
 
 #### • Task troubleshooting:
 - Geopy: No module named folium, geopy
-   1. Pip3 install geopy
-   2. Pip3 install folium
+    `pip3 install geopy`
+    `pip3 install folium`
 
 #### • Task verification:
 ![Lab 1 - Python Experiments Task 2 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task2_Verification_1.png)
