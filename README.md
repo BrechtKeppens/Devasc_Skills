@@ -99,39 +99,42 @@ Important commands:
 `string=”e” `
 `type(string) => class’str’`
 #### f{}: Input variable value in string
-`f”The string contains {string}”`
-#### .2f : decimals
-`pi = “{:.2f}”.format(num) ` gives 3.14
-#### List: [] list of items
+`f”The string contains {string}”` returns "The string contains e"
+#### .2f : Decimals
+`pi = “{:.2f}”.format(num) ` returns 3.14
+#### List: [] List of items
 `testlist = [“one”,”two”,”three”]`
-`del testlist[x]` removes list item at position x
-#### Dictionary: {} dictionary of items
+`del testlist[x]` Removes list item at position x
+#### Dictionary: {} Dictionary of items
 `Routers: {“R1”:”10.1.1.1”,”R2”:10.2.2.1”}`
-#### Len() command: number of items in list
+#### Len(): Number of items in list
 `len(testlist)` returns 3
-4.	Input(“enter a value”): asks for input with the prompt enter a value:
-5.	Print(“test”): print test to the console
-6.	If else/elif function example with input & print:
-age = string(input(’Enter your age:”))
+#### Input: Reads user input:
+`input(“enter a value”)` asks for input with the prompt enter a value:
+#### Print(“"): prints value to the console
+`print(“test”)` prints test
+#### if else/elif function example with input & print:
+`age = string(input(’Enter your age:”))
 if age >=18:
 	print(“You are 18 years of age or older”)
 elif age >=16:
 		print(“You are 16 years of age or older”)
 	else:
 		print(“You are under 16 years of age”)
-
-7.	For loop example: print all items in a list
-namelist[“Brecht”,”Rick”,”Gert”]
+`You will be prompted to enter your age. It will display whether you are over 18, between 16-18 or under 16 years of age.
+#### For loop example: print all items in a list
+`namelist[“Brecht”,”Rick”,”Gert”]
 
 for name in namelist:
-print(name)
-8.	While loop example: count to 10
-a = 10
+print(name)`Prints every name in namelist
+#### While loop example
+`a = 10
 b = 0
 While a>b:
 	print(b)
-	b=b+1
-9.	Open(“test.txt”) opens a file named text.txt
+	b=b+1` counts to 10
+#### Open(“") opens a file
+`x = open(“test.txt”) opens a file named text.txt and stores it in x`
 
 	
 
