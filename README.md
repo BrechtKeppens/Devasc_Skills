@@ -143,6 +143,16 @@ Useful commands:
 `sed -I ‘s/word1/word2/’ filename`
 #### Explanation: Replaces word1 with word2 in a file.
 
+### Part 2 questions and the corresponding answers:
+#### What unittest class do you use to create an individual unit of testing?
+TestCase
+
+#### How does the test runner know which methods are a test?
+They start with “test_”
+
+#### What command will list all of the command line options for unittest shown in the following output?
+Python3 -m unittest --help
+
 
 ## Lab 6 - Python Network automation with Netmiko
 
