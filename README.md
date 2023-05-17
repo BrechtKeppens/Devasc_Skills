@@ -36,8 +36,7 @@ Running `sudo apt upgrade && update` prevents errors from occurring.
    2. Pip3 install folium
 
 #### • Task verification:
-![Lab 1 - Python Experiments Task Verification](Lab%201%20-%20Python%20Experiments/Task2_Verification_1.png)
-
+![Lab 1 - Python Experiments Task 2 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task2_Verification_1.png)
 
 ### 1.3 Install different tools/packages on Windows OS (deep dive exercise) ++
 - Python 3.8 and PIP
