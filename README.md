@@ -167,16 +167,16 @@ Newfunction()
 Here we define a function "Newfunction" and call it using Newfunction()
 #### Define & call method in a class:
 ```
-	Class Person:
-		Def age:
-		Print(“23”)
-		Def name:
-		Print(“Brecht”)
-	Brecht = Person()
-	Brecht.Age()
-	Brecht.Name()
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+Brecht = Person("Brecht", "25")
+print(Brecht.name)
+print(Brecht.age)
 ```
-Here we make an object Brecht, of class Person. we then call the age and name function which displays the name and age.
+Here we define a Person class with a constructor (__init__) that takes name and age parameters. An instance of the class is created with the name "Brecht" and age "25", and the name and age attributes are accessed and displayed.
 
 
 ## Lab 4 - Network Infrastructure and troubleshooting
