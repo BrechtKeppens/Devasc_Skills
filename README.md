@@ -89,8 +89,8 @@ Install the VM
 A
 
 ## Lab 3 - Python Review - Development tools and Classes
-###Part 1: Python Programming Review
-
+### Part 1: Python Programming Review
+Document your findings and important commands.
 Lab netacad: Cisco DEVNET 1.3.3
 
 Important commands:
@@ -155,6 +155,28 @@ counts to 10
 #### Open(“") opens a file
 `x = open(“test.txt”) opens a file named text.txt and stores it in x`
 
+### Part 2: Explore Python Development Tools
+Document your findings and important commands.
+
+#### Define & call a function:
+```
+Def Newfunction:
+	Print(“Function called”)
+Newfunction()
+```
+Here we define a function "Newfunction" and call it using Newfunction()
+#### Define & call method in a class:
+```
+	Class Person:
+		Def age:
+		Print(“23”)
+		Def name:
+		Print(“Brecht”)
+	Brecht = Person()
+	Brecht.Age()
+	Brecht.Name()
+```
+Here we make an object Brecht, of class Person. we then call the age and name function which displays the name and age.
 
 
 ## Lab 4 - Network Infrastructure and troubleshooting
