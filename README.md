@@ -250,7 +250,7 @@ They start with “test_”
 ##### What command will list all of the command line options for unittest shown in the following output?
 Python3 -m unittest --help
 
-#### • Task troubleshooting: Git personal access token created: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+#### • Task troubleshooting: Authentication updated so we fixed it with personal access token creation: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
 #### • Task verification: Code explained above
 
