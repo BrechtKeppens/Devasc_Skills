@@ -270,7 +270,7 @@ cisco_01 = {
 connection = ConnectHandler(**cisco_01)
 connection.enable() 
 ```
-### Part 1: Connecting to a single iOS device
+##### Part 1: Connecting to a single iOS device
 
 - Sending single show command
 
@@ -282,7 +282,7 @@ connection.enable()
 
 [SendingMultipleConfigCommand.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/SendingMultipleConfigCommand.py)
 
-### Part 2: Connect to multiple IOS devices
+##### Part 2: Connect to multiple IOS devices
 - Send show commands to multiple devices
 
 [SendingShowToMultiple.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/SendingShowToMultiple.py)
@@ -305,7 +305,7 @@ connection.enable()
 - Execute a script with Functions or classes
 - Execute a script with statements (if, ifelse, else)
 
-### Part 4: Create an exciting script as a network engineer
+##### Part 4: Create an exciting script as a network engineer
 - Create an exciting and challenging script that a network engineer in a programmable era would use every day. Surprise your lecturer!
 #### • Task troubleshooting
 Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it worked
