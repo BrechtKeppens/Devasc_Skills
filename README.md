@@ -255,8 +255,23 @@ Python3 -m unittest --help
 #### • Task verification: Code explained above
 
 ## Lab 6 - Python Network automation with Netmiko
+#### • Task Preperation and implementation
+We need to setup our infrastructure, then connect using netmiko scripts as shown in the code:
+```
+from netmiko import ConnectHandler
 
+cisco_01 = {
+    "device_type": "cisco_ios",
+    "host": "172.16.9.4",
+    "username": "cisco",
+    "password": "class",
+    "secret": "cisco"
+}
+connection = ConnectHandler(**cisco_01)
+connection.enable() 
+```
 ### Part 1: Connecting to a single iOS device
+
 - Sending single show command
 
 [SendingSingleShowCommand.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/SendingSingleShowCommand.py)
@@ -293,4 +308,5 @@ Python3 -m unittest --help
 ### Part 4: Create an exciting script as a network engineer
 - Create an exciting and challenging script that a network engineer in a programmable era would use every day. Surprise your lecturer!
 #### • Task troubleshooting
+Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it worked
 #### • Task verification: Code explained above
