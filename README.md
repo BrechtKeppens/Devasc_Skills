@@ -101,26 +101,26 @@ Important commands:
 ##### f{}: Input variable value in string
 `f”The string contains {string}”` returns "The string contains e"
 
-#### .2f : Decimals
+##### .2f : Decimals
 `pi = “{:.2f}”.format(num) ` returns 3.14
 
-#### List: [] List of items
+##### List: [] List of items
 `testlist = [“one”,”two”,”three”]`
 `del testlist[x]` Removes list item at position x
 
-#### Dictionary: {} Dictionary of items
+##### Dictionary: {} Dictionary of items
 `Routers: {“R1”:”10.1.1.1”,”R2”:10.2.2.1”}`
 
-#### Len(): Number of items in list
+##### Len(): Number of items in list
 `len(testlist)` returns 3
 
-#### Input: Reads user input:
+##### Input: Reads user input:
 `input(“enter a value”)` asks for input with the prompt enter a value:
 
-#### Print(“"): prints value to the console
+##### Print(“"): prints value to the console
 `print(“test”)` prints test
 
-#### if else/elif function example with input & print:
+##### if else/elif function example with input & print:
 ```
 age = string(input(’Enter your age:”))
 if age >=18:
@@ -132,7 +132,7 @@ elif age >=16:
 ```
 You will be prompted to enter your age. It will display whether you are over 18, between 16-18 or under 16 years of age.
 
-#### For loop example: print all items in a list
+##### For loop example: print all items in a list
 ```
 namelist[“Brecht”,”Rick”,”Gert”]
 
@@ -141,7 +141,7 @@ print(name)
 ``` 
 Prints every name in namelist
 
-#### While loop example
+##### While loop example
 ```
 a = 10
 b = 0
@@ -151,23 +151,25 @@ While a>b:
 ```
 counts to 10
 	
-#### Open(“") opens a file
+##### Open(“") opens a file
 `x = open(“test.txt”) opens a file named text.txt and stores it in x`
 #### • Task Troubleshooting
 None needed
 #### • Task Verification
-Scripts above
+Code explained above
 ### Part 2: Explore Python Development Tools
+
+#### • Task preparation and implementation:
 Document your findings and important commands.
 
-#### Define & call a function:
+##### Define & call a function:
 ```
 Def Newfunction:
 	Print(“Function called”)
 Newfunction()
 ```
 Here we define a function "Newfunction" and call it using Newfunction()
-#### Define & call method in a class:
+##### Define & call method in a class:
 ```
 class Person:
     def __init__(self, name, age):
@@ -184,14 +186,14 @@ Here we define a Person class with a constructor (__init__) that takes name and 
 None needed
 
 #### • Task Verification:
-Verification above
+Code explained above
 
 ## Lab 4 - Network Infrastructure and troubleshooting
 A
 
 ## Lab 5 - Software Development and Design Content
-Useful commands:
 ### Part 1: Software Version Control with Git
+#### • Task preparation & implementation
 `git config –global {user.name/user.email} “email/name`
 
 #### Explanation: Puts email/name in the git config.
@@ -239,15 +241,18 @@ Useful commands:
 #### Explanation: Replaces word1 with word2 in a file.
 
 ### Part 2 questions and the corresponding answers:
-#### What unittest class do you use to create an individual unit of testing?
+##### What unittest class do you use to create an individual unit of testing?
 TestCase
 
-#### How does the test runner know which methods are a test?
+##### How does the test runner know which methods are a test?
 They start with “test_”
 
-#### What command will list all of the command line options for unittest shown in the following output?
+##### What command will list all of the command line options for unittest shown in the following output?
 Python3 -m unittest --help
 
+#### • Task troubleshooting: Git personal access token created: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+#### • Task verification: Code explained above
 
 ## Lab 6 - Python Network automation with Netmiko
 
@@ -287,3 +292,5 @@ Python3 -m unittest --help
 
 ### Part 4: Create an exciting script as a network engineer
 - Create an exciting and challenging script that a network engineer in a programmable era would use every day. Surprise your lecturer!
+#### • Task troubleshooting
+#### • Task verification: Code explained above
