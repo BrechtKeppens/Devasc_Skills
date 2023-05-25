@@ -94,11 +94,11 @@ Lab netacad: Cisco DEVNET 1.3.3
 #### • Task preparation and implementation:
 Important commands:
 
-#### Type(): Returns the variable type 
+##### Type(): Returns the variable type 
 `string=”e” `
 `type(string) => class’str’`
 
-#### f{}: Input variable value in string
+##### f{}: Input variable value in string
 `f”The string contains {string}”` returns "The string contains e"
 
 #### .2f : Decimals
@@ -153,7 +153,10 @@ counts to 10
 	
 #### Open(“") opens a file
 `x = open(“test.txt”) opens a file named text.txt and stores it in x`
-
+#### • Task Troubleshooting
+None needed
+#### • Task Verification
+Scripts above
 ### Part 2: Explore Python Development Tools
 Document your findings and important commands.
 
