@@ -90,9 +90,8 @@ A
 
 ## Lab 3 - Python Review - Development tools and Classes
 ### Part 1: Python Programming Review
-Document your findings and important commands.
 Lab netacad: Cisco DEVNET 1.3.3
-
+#### • Task preparation and implementation:
 Important commands:
 
 #### Type(): Returns the variable type 
@@ -178,6 +177,11 @@ print(Brecht.age)
 ```
 Here we define a Person class with a constructor (__init__) that takes name and age parameters. An instance of the class is created with the name "Brecht" and age "25", and the name and age attributes are accessed and displayed.
 
+#### • Task Troubleshooting:
+None needed
+
+#### • Task Verification:
+Verification above
 
 ## Lab 4 - Network Infrastructure and troubleshooting
 A
