@@ -211,22 +211,33 @@ username cisco password class.
 - All unused ports are in down state and we put them in an unused vlan.
 - Sticky mac adress on user ports
 - 1:30min timeout exec
+#### Draw up an IP plan and document your solution
+| DEVICE          | INTERFACE   | IP            | VLAN |
+|-----------------|-------------|---------------|------|
+| LAB-RA09-C-R03  | G0/0.10     | 172.16.9.4    | 10   |
+|                 | G0/0.10HSRP | 172.16.9.1    | 10   |
+|                 | G0/0.40     | 172.16.9.52   | 40   |
+|                 | G0/0.40HSRP | 172.16.9.49   | 40   |
+|                 | G0/1        | 10.199.66.109 | /    |
+| LAB-RA09-A-SW03 | VLAN10      | 172.16.9.7    | 10   |
+#### Make sure you can backup and restore device configuration from a backup environment
+
 
 ### • Task Troubleshooting:
-#### Problem 1: Unable to connect to teachers' switch.
+#### • Problem 1: Unable to connect to teachers' switch.
 ##### Cause: Switch ports were down by default.
 ##### Solution: Enter no shutdown on the port in question.
 
-#### Problem 2: Unable to ping or tftp from router to remote pc
+#### • Problem 2: Unable to ping or tftp from router to remote pc
 ##### Cause: Routing issue caused the 10.199.66.X network to not route 
 ##### Solution:  Ping using router's subinterface (using vlan ip address)
 ##### the `ip tftp source-interface gigabitEthernet 0/0.10` command sets our vlan ip adress as the source for tftp.
 
-#### Problem 3: No connectivity, something changed in configs
+#### • Problem 3: No connectivity, something changed in configs
 ##### Cause: Someone unplugged our cable and plugged it into a different port
 ##### Solution: Followed cables to find out who used our port, and replaced it.
 
-#### Problem 4: Router auto configured ACLs after erase & reload
+#### • Problem 4: Router auto configured ACLs after erase & reload
 ##### Cause: Bug caused by exec-timeout
 ##### Solution: Disable exec timeout
 ### • Task Verification:
