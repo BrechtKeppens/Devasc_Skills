@@ -199,7 +199,7 @@ HSRP has been configured on the routers to ensure redundancy. This also supplies
 We configure a domain name using the following command:
 `ip domain name pxl.be`
 
-##### Apply best practices to configuration and network security
+#### Apply best practices to configuration and network security
 - Vlans have been configured for best practice segmentation
 - For security reasons we chose to use SSH 2.0 using the following commands:
 ```
