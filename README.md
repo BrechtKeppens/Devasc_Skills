@@ -214,21 +214,21 @@ username cisco password class.
 
 ### • Task Troubleshooting:
 #### Problem 1: Unable to connect to teachers' switch.
-#### Cause: Switch ports were down by default.
-#### Solution: Enter no shutdown on the port in question.
+Cause: Switch ports were down by default.
+Solution: Enter no shutdown on the port in question.
 
 #### Problem 2: Unable to ping or tftp from router to remote pc
-#### Cause: Routing issue caused the 10.199.66.X network to not route 
-#### Solution:  Ping using router's subinterface (using vlan ip address)
-#### the `ip tftp source-interface gigabitEthernet 0/0.10` command sets our vlan ip adress as the source for tftp.
+Cause: Routing issue caused the 10.199.66.X network to not route 
+Solution:  Ping using router's subinterface (using vlan ip address)
+the `ip tftp source-interface gigabitEthernet 0/0.10` command sets our vlan ip adress as the source for tftp.
 
 #### Problem 3: No connectivity, something changed in configs
-#### Cause: Someone unplugged our cable and plugged it into a different port
-#### Solution: Followed cables to find out who used our port, and replaced it.
+Cause: Someone unplugged our cable and plugged it into a different port
+Solution: Followed cables to find out who used our port, and replaced it.
 
 #### Problem 4: Router auto configured ACLs after erase & reload
-#### Cause: Bug caused by exec-timeout
-#### Solution: Disable exec timeout
+Cause: Bug caused by exec-timeout
+Solution: Disable exec timeout
 ### • Task Verification:
 
 ## Lab 5 - Software Development and Design Content
