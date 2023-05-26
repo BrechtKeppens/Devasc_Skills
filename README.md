@@ -190,15 +190,33 @@ Code explained above
 
 ## Lab 4 - Network Infrastructure and troubleshooting
 ### • Task Preparation and implementation:
-##### Install, configure and test the network infrastructure based on the network drawing	
+#### Install, configure and test the network infrastructure based on the network drawing	
 <afbeelding netwerk>
-##### Proactively determine what is needed to ensure the continuity of the system and network infrastructure
+
+#### Proactively determine what is needed to ensure the continuity of the system and network infrastructure
 HSRP has been configured on the routers to ensure redundancy. This also supplies the netwerk with scalability for the routers.
 
 We configure a domain name using the following command:
 `ip domain name pxl.be`
 
 ##### Apply best practices to configuration and network security
+Vlans have been configured for best practice segmentation:
+For security reasons we chose to use SSH 2.0 using the following commands:
+>> crypto key generate rsa 1024
+>>ip ssh version 2
+Then we made an ssh user:
+>>username cisco password class.
+Alle ongebruikte poorten staan down met het shutdown commando en vervolgens zijn deze ook in een unused vlan gestoken.
+Op de gebruiker poorten is er mac address sticky geconfigureerd.
+
+
+Voor security redenen is er gekozen voor SSH 2.0 met behulp van de volgende commandos.
+>> crypto key generate rsa 1024
+>>ip ssh version 2
+Vervolgens ook een SSH gebruiker.
+>>username cisco password class.
+Alle ongebruikte poorten staan down met het shutdown commando en vervolgens zijn deze ook in een unused vlan gestoken.
+Op de gebruiker poorten is er mac address sticky geconfigureerd.
 
 ### • Task Troubleshooting:
 #### Problem 1: Unable to connect to teachers' switch.
