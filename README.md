@@ -191,7 +191,7 @@ Code explained above
 ## Lab 4 - Network Infrastructure and troubleshooting
 ### • Task Preparation and implementation:
 #### Install, configure and test the network infrastructure based on the network drawing	
-<afbeelding netwerk>
+![Network Plan](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/Networkplan.png)
 
 #### Proactively determine what is needed to ensure the continuity of the system and network infrastructure
 HSRP has been configured on the routers to ensure redundancy. This also supplies the netwerk with scalability for the routers.
