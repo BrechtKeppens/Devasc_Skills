@@ -1,5 +1,5 @@
 # Documentation for labs
-### ! Disclaimer: all images are made using links and are not copy paste as instructed !
+### ! Disclaimer: all images are made using links and are not copy pasted as instructed !
 ## Lab 1 - Python Experiments
 
 ### 1.1 Install different tools/packages on Ubuntu DEVASC-LABVM:
