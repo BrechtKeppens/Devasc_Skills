@@ -208,8 +208,8 @@ ip ssh version 2
 Then we made an ssh user:
 username cisco password class.
 ```
-- Alle ongebruikte poorten staan down met het shutdown commando en vervolgens zijn deze ook in een unused vlan gestoken.
-- Op de gebruiker poorten is er mac address sticky geconfigureerd.
+- All unused ports are in down state and we put them in an unused vlan.
+- Sticky mac adress on user ports
 - 1:30min timeout exec
 
 ### • Task Troubleshooting:
