@@ -84,7 +84,7 @@ Install the VM
 
 ### • Task verification:
 ![Lab 1 - Python Experiments Task 4 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task4_Verification_1.png)
-## Lab 2 - Explore rest APIs with API-simulator and postman
+# Lab 2 - Explore rest APIs with API-simulator and postman
 A
 
 # Lab 3 - Python Review - Development tools and Classes
@@ -303,8 +303,8 @@ Python3 -m unittest --help
 
 #### • Task verification: Code explained above
 
-## Lab 6 - Python Network automation with Netmiko
-#### • Task Preperation and implementation
+# Lab 6 - Python Network automation with Netmiko
+### • Task Preperation and implementation
 We need to setup our infrastructure, then connect using netmiko scripts as shown in the code:
 ```
 from netmiko import ConnectHandler
@@ -319,7 +319,7 @@ cisco_01 = {
 connection = ConnectHandler(**cisco_01)
 connection.enable() 
 ```
-##### Part 1: Connecting to a single iOS device
+### Part 1: Connecting to a single iOS device
 
 - Sending single show command
 
@@ -331,7 +331,7 @@ connection.enable()
 
 [SendingMultipleConfigCommand.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/SendingMultipleConfigCommand.py)
 
-##### Part 2: Connect to multiple IOS devices
+### Part 2: Connect to multiple IOS devices
 - Send show commands to multiple devices
 
 [SendingShowToMultiple.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/SendingShowToMultiple.py)
@@ -354,8 +354,8 @@ connection.enable()
 - Execute a script with Functions or classes
 - Execute a script with statements (if, ifelse, else)
 
-##### Part 4: Create an exciting script as a network engineer
+### Part 4: Create an exciting script as a network engineer
 - Create an exciting and challenging script that a network engineer in a programmable era would use every day. Surprise your lecturer!
-#### • Task troubleshooting
+### • Task troubleshooting
 Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it worked
-#### • Task verification: Code explained above
+### • Task verification: Code explained above
