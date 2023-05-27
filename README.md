@@ -60,7 +60,7 @@ If Jupyter gives errors when installed using `pip install jupyter`, try the foll
 ### • Task verification:
 ![Lab 1 - Python Experiments Task 3 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task3_Verification_1.png)
 
-### 1.4 Install different tools/packages on Ubuntu 22.04.01 LTS (deep dive exercise) ++
+## 1.4 Install different tools/packages on Ubuntu 22.04.01 LTS (deep dive exercise) ++
 
 - Python 3.8 and PIP
 - Visual Studio Code
@@ -69,7 +69,7 @@ If Jupyter gives errors when installed using `pip install jupyter`, try the foll
 
 Document your findings in 3 steps:
 
-#### • Task preparation and implementation: 
+### • Task preparation and implementation: 
 Download 22.04.1 ISO from: [Ubuntu Releases](https://old-releases.ubuntu.com/releases/22.04.1/)
 Install the VM
 1. Update & upgrade to prevent errors: `sudo apt update && sudo apt upgrade`
@@ -79,48 +79,48 @@ Install the VM
 4. Install Jupyter Notebook: `pip install jupyter`
 5. Install Python IDLE: `sudo apt install idle`
 
-#### • Task troubleshooting:
+### • Task troubleshooting:
 - Use `sudo apt upgrade && update` to prevent issues.
 - If Jupyter doesn't work, try `sudo apt install jupyter` instead of using `pip`.
 
-#### • Task verification:
+### • Task verification:
 ![Lab 1 - Python Experiments Task 4 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task4_Verification_1.png)
 ## Lab 2 - Explore rest APIs with API-simulator and postman
 A
 
-## Lab 3 - Python Review - Development tools and Classes
-### Part 1: Python Programming Review
+# Lab 3 - Python Review - Development tools and Classes
+## 3.1 Python Programming Review
 Lab netacad: Cisco DEVNET 1.3.3
-#### • Task preparation and implementation:
+### • Task preparation and implementation:
 Important commands:
 
-##### Type(): Returns the variable type 
+### Type(): Returns the variable type 
 `string=”e” `
 `type(string) => class’str’`
 
-##### f{}: Input variable value in string
+#### f{}: Input variable value in string
 `f”The string contains {string}”` returns "The string contains e"
 
-##### .2f : Decimals
+#### .2f : Decimals
 `pi = “{:.2f}”.format(num) ` returns 3.14
 
-##### List: [] List of items
+#### List: [] List of items
 `testlist = [“one”,”two”,”three”]`
 `del testlist[x]` Removes list item at position x
 
-##### Dictionary: {} Dictionary of items
+#### Dictionary: {} Dictionary of items
 `Routers: {“R1”:”10.1.1.1”,”R2”:10.2.2.1”}`
 
-##### Len(): Number of items in list
+#### Len(): Number of items in list
 `len(testlist)` returns 3
 
-##### Input: Reads user input:
+#### Input: Reads user input:
 `input(“enter a value”)` asks for input with the prompt enter a value:
 
-##### Print(“"): prints value to the console
+#### Print(“"): prints value to the console
 `print(“test”)` prints test
 
-##### if else/elif function example with input & print:
+#### if else/elif function example with input & print:
 ```
 age = string(input(’Enter your age:”))
 if age >=18:
@@ -132,7 +132,7 @@ elif age >=16:
 ```
 You will be prompted to enter your age. It will display whether you are over 18, between 16-18 or under 16 years of age.
 
-##### For loop example: print all items in a list
+#### For loop example: print all items in a list
 ```
 namelist[“Brecht”,”Rick”,”Gert”]
 
@@ -141,7 +141,7 @@ print(name)
 ``` 
 Prints every name in namelist
 
-##### While loop example
+#### While loop example
 ```
 a = 10
 b = 0
@@ -151,25 +151,25 @@ While a>b:
 ```
 counts to 10
 	
-##### Open(“") opens a file
+#### Open(“") opens a file
 `x = open(“test.txt”) opens a file named text.txt and stores it in x`
-#### • Task Troubleshooting
+### • Task Troubleshooting
 None needed
-#### • Task Verification
+### • Task Verification
 Code explained above
-### Part 2: Explore Python Development Tools
+## Part 2: Explore Python Development Tools
 
-#### • Task preparation and implementation:
+### • Task preparation and implementation:
 Document your findings and important commands.
 
-##### Define & call a function:
+#### Define & call a function:
 ```
 Def Newfunction:
 	Print(“Function called”)
 Newfunction()
 ```
 Here we define a function "Newfunction" and call it using Newfunction()
-##### Define & call method in a class:
+#### Define & call method in a class:
 ```
 class Person:
     def __init__(self, name, age):
@@ -182,14 +182,14 @@ print(Brecht.age)
 ```
 Here we define a Person class with a constructor (__init__) that takes name and age parameters. An instance of the class is created with the name "Brecht" and age "25", and the name and age attributes are accessed and displayed.
 
-#### • Task Troubleshooting:
+### • Task Troubleshooting:
 None needed
 
-#### • Task Verification:
+### • Task Verification:
 Code explained above
 
-## Lab 4 - Network Infrastructure and troubleshooting
-### • Task Preparation and implementation:
+# Lab 4 - Network Infrastructure and troubleshooting
+## • Task Preparation and implementation:
 #### Install, configure and test the network infrastructure based on the network drawing	
 ![Network Plan](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/Networkplan.png)
 
@@ -199,7 +199,7 @@ HSRP has been configured on the routers to ensure redundancy. This also supplies
 We configure a domain name using the following command:
 `ip domain name pxl.be`
 
-#### Apply best practices to configuration and network security
+### Apply best practices to configuration and network security
 - Vlans have been configured for best practice segmentation
 - For security reasons we chose to use SSH 2.0 using the following commands:
 ```
@@ -211,7 +211,7 @@ username cisco password class.
 - All unused ports are in down state and we put them in an unused vlan.
 - Sticky mac adress on user ports
 - 1:30min timeout exec
-#### Draw up an IP plan and document your solution
+### Draw up an IP plan and document your solution
 | DEVICE          | INTERFACE   | IP            | VLAN |
 |-----------------|-------------|---------------|------|
 | LAB-RA09-C-R03  | G0/0.10     | 172.16.9.4    | 10   |
@@ -220,7 +220,7 @@ username cisco password class.
 |                 | G0/0.40HSRP | 172.16.9.49   | 40   |
 |                 | G0/1        | 10.199.66.109 | /    |
 | LAB-RA09-A-SW03 | VLAN10      | 172.16.9.7    | 10   |
-#### Make sure you can backup and restore device configuration from a backup environment
+### Make sure you can backup and restore device configuration from a backup environment
 
 
 ### • Task Troubleshooting:
