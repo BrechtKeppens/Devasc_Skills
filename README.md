@@ -67,7 +67,6 @@ If Jupyter gives errors when installed using `pip install jupyter`, try the foll
 - Jupyter Notebook
 - Python IDLE
 
-Document your findings in 3 steps:
 
 ### • Task preparation and implementation: 
 Download 22.04.1 ISO from: [Ubuntu Releases](https://old-releases.ubuntu.com/releases/22.04.1/)
@@ -160,8 +159,7 @@ Code explained above
 ## Part 2: Explore Python Development Tools
 
 ### • Task preparation and implementation:
-Document your findings and important commands.
-
+Documented findings and important commands:
 #### Define & call a function:
 ```
 Def Newfunction:
