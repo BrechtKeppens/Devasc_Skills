@@ -203,7 +203,9 @@ We configure a domain name using the following command:
 ```
 crypto key generate rsa 1024
 ip ssh version 2
+```
 Then we made an ssh user:
+```
 username cisco password class.
 ```
 - All unused ports are in down state and we put them in an unused vlan.
