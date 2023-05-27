@@ -1,44 +1,44 @@
-# Documentation for labs
-### ! Disclaimer: all images are made using links and are not copy pasted as instructed !
-## Lab 1 - Python Experiments
 
-### 1.1 Install different tools/packages on Ubuntu DEVASC-LABVM:
+### ! Disclaimer: all images are made using links and are not copy pasted as instructed !
+# Lab 1 - Python Experiments
+
+## 1.1 Install different tools/packages on Ubuntu DEVASC-LABVM:
 - Python 3.8 and PIP
 - Visual Studio Code
 - Jupyter Notebook
 - Python IDLE
 
-#### • Task preparation and implementation:
+### • Task preparation and implementation:
 1. Update & upgrade to prevent errors: `sudo apt update && sudo apt upgrade`
 2. Install Python & PIP: `sudo apt install python3 python3-pip`
 3. Install Visual Studio Code: `sudo snap install --classic code`
 4. Install Jupyter Notebook: `sudo pip3 install jupyter`
 5. Install Python IDLE: `sudo apt install idle3`
 
-#### • Task troubleshooting:
+### • Task troubleshooting:
 Running `sudo apt upgrade && update` prevents errors from occurring.
 
-#### • Task verification:
+### • Task verification:
 ![Lab 1 - Python Experiments Task Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task1_Verification_1.png)
 
-### 1.2 Run geopy and timedate Python Scripts on the DEVASC-LABVM using the tools above (1.1):
+## 1.2 Run geopy and timedate Python Scripts on the DEVASC-LABVM using the tools above (1.1):
 - timedate.py
 - geopy-geocoders_location.py
 - location.py
 
-#### • Task preparation and implementation:
+### • Task preparation and implementation:
 1. Clone repo: `git clone https://github.com/wleppens/PythonExperiments`
 2. Run scripts using: `python3 <script>.py`
 
-#### • Task troubleshooting:
+### • Task troubleshooting:
 - Geopy: No module named folium, geopy
     `pip3 install geopy`
     `pip3 install folium`
 
-#### • Task verification:
+### • Task verification:
 ![Lab 1 - Python Experiments Task 2 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task2_Verification_1.png)
 
-### 1.3 Install different tools/packages on Windows OS (deep dive exercise) ++
+## 1.3 Install different tools/packages on Windows OS (deep dive exercise) ++
 - Python 3.8 and PIP
 - Visual Studio Code
 - Jupyter Notebook
@@ -46,18 +46,18 @@ Running `sudo apt upgrade && update` prevents errors from occurring.
 
 Investigate the compatibility of the tools with Windows OS and explain briefly if necessary.
 
-#### • Task preparation and implementation:
+### • Task preparation and implementation:
 1. Download Python with installer for Windows (x86 executable installer) from: [Python.org](https://www.python.org/downloads/release/python-380/)
 2. Download Visual Studio Code for Windows from: [code.visualstudio.com](https://code.visualstudio.com/download)
 3. Download Jupyter Notebook: `pip install jupyter`
 4. Download IDLE: `pip install idle`
 
-#### • Task troubleshooting:
+### • Task troubleshooting:
 If Jupyter gives errors when installed using `pip install jupyter`, try the following:
 - Upgrade pip: `python -m pip install --upgrade pip`
 - Then install Jupyter: `python -m pip install jupyter`
 
-#### • Task verification:
+### • Task verification:
 ![Lab 1 - Python Experiments Task 3 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task3_Verification_1.png)
 
 ### 1.4 Install different tools/packages on Ubuntu 22.04.01 LTS (deep dive exercise) ++
