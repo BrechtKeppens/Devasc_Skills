@@ -93,7 +93,7 @@ A
 ### • Task preparation and implementation:
 Important commands:
 
-### Type(): Returns the variable type 
+#### Type(): Returns the variable type 
 `string=”e” `
 `type(string) => class’str’`
 
