@@ -20,7 +20,6 @@ Running `sudo apt upgrade && update` prevents errors from occurring.
 
 ### • Task verification:
 ![Lab 1 - Python Experiments Task Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task1_Verification_1.png)
-
 ## 1.2 Run geopy and timedate Python Scripts on the DEVASC-LABVM using the tools above (1.1):
 - timedate.py
 - geopy-geocoders_location.py
@@ -241,7 +240,8 @@ username cisco password class.
 ##### Cause: Bug caused by exec-timeout
 ##### Solution: Disable exec timeout
 ### • Task Verification:
-
+[lab-ra09-c-r03-confg]https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg
+[lab-ra09-c-sw03-confg]https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-sw03-confg
 # Lab 5 - Software Development and Design Content
 ## 5.1 Software Version Control with Git
 #### • Task preparation & implementation
