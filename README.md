@@ -240,8 +240,8 @@ username cisco password class.
 ##### Cause: Bug caused by exec-timeout
 ##### Solution: Disable exec timeout
 ### • Task Verification:
-[lab-ra09-c-r03-confg]https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg
-[lab-ra09-c-sw03-confg]https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-sw03-confg
+[lab-ra09-c-r03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg)
+[lab-ra09-c-sw03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-sw03-confg)
 # Lab 5 - Software Development and Design Content
 ## 5.1 Software Version Control with Git
 #### • Task preparation & implementation
