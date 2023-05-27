@@ -89,7 +89,7 @@ A
 
 # Lab 3 - Python Review - Development tools and Classes
 ## 3.1 Python Programming Review
-Lab netacad: Cisco DEVNET 1.3.3
+
 ### • Task preparation and implementation:
 Important commands:
 
