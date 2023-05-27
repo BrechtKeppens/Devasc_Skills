@@ -156,7 +156,7 @@ counts to 10
 None needed
 ### • Task Verification
 Code explained above
-## Part 2: Explore Python Development Tools
+## 3.2 Explore Python Development Tools
 
 ### • Task preparation and implementation:
 Documented findings and important commands:
