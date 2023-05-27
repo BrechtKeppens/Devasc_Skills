@@ -220,6 +220,46 @@ username cisco password class.
 |                 | G0/1        | 10.199.66.109 | /    |
 | LAB-RA09-A-SW03 | VLAN10      | 172.16.9.7    | 10   |
 ### Make sure you can backup and restore device configuration from a backup environment
+Router:
+```
+en
+conf t
+interface g0/1
+ip address 10.199.66.109 255.255.255.224
+no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 10.199.66.100
+copy tftp: running-config
+10.199.64.134
+lab-ra09-c-r03-confg
+interface g0/1
+no shutdown
+interface g0/0
+no shutdown
+```
+Switch:
+```
+en
+conf t
+vlan 10
+name "Management Segment Student Rack 09"
+exit
+interface vlan 10
+description "Management Segment Student Rack 09"
+ip address 172.16.9.7 255.255.255.240
+no shutdown
+exit
+ip default-gateway 172.16.9.1
+interface g0/1
+switchport mode trunk
+switchport trunk allowed vlan 10
+switchport trunk native vlan 99
+no shutdown
+exit
+copy tftp: running-config
+10.199.64.134
+lab-ra09-c-r03-confg
+```
 
 
 ### • Task Troubleshooting:
@@ -240,7 +280,9 @@ username cisco password class.
 ##### Cause: Bug caused by exec-timeout
 ##### Solution: Disable exec timeout
 ### • Task Verification:
+####Router config
 [lab-ra09-c-r03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg)
+####Switch config
 [lab-ra09-c-sw03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-sw03-confg)
 # Lab 5 - Software Development and Design Content
 ## 5.1 Software Version Control with Git
