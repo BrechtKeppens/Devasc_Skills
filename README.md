@@ -240,8 +240,8 @@ username cisco password class.
 ##### Solution: Disable exec timeout
 ### • Task Verification:
 
-## Lab 5 - Software Development and Design Content
-### Part 1: Software Version Control with Git
+# Lab 5 - Software Development and Design Content
+## 5.1 Software Version Control with Git
 #### • Task preparation & implementation
 `git config –global {user.name/user.email} “email/name`
 
@@ -289,7 +289,7 @@ username cisco password class.
 `sed -I ‘s/word1/word2/’ filename`
 #### Explanation: Replaces word1 with word2 in a file.
 
-### Part 2 questions and the corresponding answers:
+## 5.2 questions and the corresponding answers:
 ##### What unittest class do you use to create an individual unit of testing?
 TestCase
 
@@ -319,7 +319,7 @@ cisco_01 = {
 connection = ConnectHandler(**cisco_01)
 connection.enable() 
 ```
-### Part 1: Connecting to a single iOS device
+## 6.1 Connecting to a single iOS device
 
 - Sending single show command
 
@@ -331,7 +331,7 @@ connection.enable()
 
 [SendingMultipleConfigCommand.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/SendingMultipleConfigCommand.py)
 
-### Part 2: Connect to multiple IOS devices
+## 6.2 Connect to multiple IOS devices
 - Send show commands to multiple devices
 
 [SendingShowToMultiple.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/SendingShowToMultiple.py)
@@ -354,7 +354,7 @@ connection.enable()
 - Execute a script with Functions or classes
 - Execute a script with statements (if, ifelse, else)
 
-### Part 4: Create an exciting script as a network engineer
+## 6.4 Create an exciting script as a network engineer
 - Create an exciting and challenging script that a network engineer in a programmable era would use every day. Surprise your lecturer!
 ### • Task troubleshooting
 Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it worked
