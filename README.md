@@ -458,14 +458,25 @@ Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it wo
 Install Vmware if needed, virtualbox will not work for this lab
 1.	Import the .iova file to vmware
 2.	Go to VM settings and click the first CD/DVD in the list, replace the current iso file with the one downloaded from your course instructor	
+3.	Launch VM
+4.	Ping Devasc machine to ensure connectivity
+5.	Visit the CSR1000v webinterface (https://ip)
 ### ● Task troubleshooting
 1. We needed an ISO file which the teacher did not have access to but he ended up finding a downloadable version online. 
 2. I checked Live CD/DVD which made me encounter some issues, these were resolved when I unchecked the option
 3. I did not get an ip address assigned to my adapter in virtualbox, I switched to vmware and this solved the issue 
 ### ● Task verification
-
+<screenshot>
 ## 7.2 YANG
 ● Task preparation and implementation
+https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1693/ietf-interfaces.yang
+We are now gonna review the yang code on the following link
+`wget https://raw.githubusercontent.com/YangModels/yang/master/vendor/cisco/xe/1693/ietf-interfaces.yang`
+Use the command above to copy the yang file to your VM
+`pyang -f tree ietf-interfaces.yang`
+
+Using this command we can view the yang code in the tree format, which is much more readable
+
 ● Task troubleshooting
 ● Task verification
 
