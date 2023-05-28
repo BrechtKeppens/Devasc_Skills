@@ -9,6 +9,7 @@
 - Python IDLE
 
 ### • Task preparation and implementation:
+First install devasc VM, then
 1. Update & upgrade to prevent errors: `sudo apt update && sudo apt upgrade`
 2. Install Python & PIP: `sudo apt install python3 python3-pip`
 3. Install Visual Studio Code: `sudo snap install --classic code`
@@ -20,7 +21,6 @@ Running `sudo apt upgrade && update` prevents errors from occurring.
 
 ### • Task verification:
 ![Lab 1 - Python Experiments Task Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task1_Verification_1.png)
-
 ## 1.2 Run geopy and timedate Python Scripts on the DEVASC-LABVM using the tools above (1.1):
 - timedate.py
 - geopy-geocoders_location.py
@@ -85,7 +85,48 @@ Install the VM
 ### • Task verification:
 ![Lab 1 - Python Experiments Task 4 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task4_Verification_1.png)
 # Lab 2 - Explore rest APIs with API-simulator and postman
-A
+## 2.1 Explore API Documentation Using the API Simulator
+### •  Task preparation and implementation:
+#### API call using GUI
+We visit library.demo.local, it puts us in the Our Books tab. Then we click `Click here for API docs` and click /api/v1 > GET /books
+Now we can make our first API call using the GET /books API (GUI) > Try it out > Execute:
+#### API call using curl
+We make our first API call with curl using `curl -X get "http://library.demo.local/api/v1/books?includeISBN=true" -H accept: application/json` this returns the books with ISBN true
+
+Visible in our books now 
+Also Get books shows these
+#### Delete book using curl and API key
+curl -X DELETE "http://library.demo.local/api/v1/books/4" -H "accept: application/json" -H "X-API-KEY: cisco|7F8RljSITKTpnaa_YJp8fCcgkUrmauZ4wlx6vopD1yk"
+
+#### Post book response
+We post a book reponse, we get code 200 success and it is now visible in Our books
+
+###	Task troubleshooting: curl api call wasn’t working -> worked after restart & sudo apt update
+
+###	Task verification:  
+API calls:
+
+Response:
+
+Delete book:
+## 2.2 Use Postman to make API calls to the API simulator
+###	Task preparation and implementation: 
+We make POST request with the api key
+
+
+
+
+
+###	Task troubleshooting: 
+Method not allowed but was using get instead of post when trying to retrieve API Key
+
+###	Task verification: 
+Confirmation of POST request, id 4 is back in there now. We removed it in the last excercise :
+
+
+
+
+
 
 # Lab 3 - Python Review - Development tools and Classes
 ## 3.1 Python Programming Review
@@ -221,27 +262,72 @@ username cisco password class.
 |                 | G0/1        | 10.199.66.109 | /    |
 | LAB-RA09-A-SW03 | VLAN10      | 172.16.9.7    | 10   |
 ### Make sure you can backup and restore device configuration from a backup environment
+Router:
+```
+en
+conf t
+interface g0/1
+ip address 10.199.66.109 255.255.255.224
+no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 10.199.66.100
+copy tftp: running-config
+10.199.64.134
+lab-ra09-c-r03-confg
+interface g0/1
+no shutdown
+interface g0/0
+no shutdown
+```
+Switch:
+```
+en
+conf t
+vlan 10
+name "Management Segment Student Rack 09"
+exit
+interface vlan 10
+description "Management Segment Student Rack 09"
+ip address 172.16.9.7 255.255.255.240
+no shutdown
+exit
+ip default-gateway 172.16.9.1
+interface g0/1
+switchport mode trunk
+switchport trunk allowed vlan 10
+switchport trunk native vlan 99
+no shutdown
+exit
+copy tftp: running-config
+10.199.64.134
+lab-ra09-c-r03-confg
+```
 
 
 ### • Task Troubleshooting:
+---
 #### - Problem 1: Unable to connect to teachers' switch.
 ##### Cause: Switch ports were down by default.
 ##### Solution: Enter no shutdown on the port in question.
-
+---
 #### - Problem 2: Unable to ping or tftp from router to remote pc
 ##### Cause: Routing issue caused the 10.199.66.X network to not route 
 ##### Solution:  Ping using router's subinterface (using vlan ip address)
 ##### the `ip tftp source-interface gigabitEthernet 0/0.10` command sets our vlan ip adress as the source for tftp.
-
+---
 #### - Problem 3: No connectivity, something changed in configs
 ##### Cause: Someone unplugged our cable and plugged it into a different port
 ##### Solution: Followed cables to find out who used our port, and replaced it.
-
+---
 #### - Problem 4: Router auto configured ACLs after erase & reload
 ##### Cause: Bug caused by exec-timeout
 ##### Solution: Disable exec timeout
+---
 ### • Task Verification:
-
+####Router config
+[lab-ra09-c-r03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg)
+####Switch config
+[lab-ra09-c-sw03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-sw03-confg)
 # Lab 5 - Software Development and Design Content
 ## 5.1 Software Version Control with Git
 #### • Task preparation & implementation
@@ -303,7 +389,7 @@ Python3 -m unittest --help
 
 #### • Task troubleshooting: Authentication updated so we fixed it with personal access token creation: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-#### • Task verification: Code explained above
+#### • Task verification: Code explained above + git working as you can see, we are using it to document
 
 # Lab 6 - Python Network automation with Netmiko
 ### • Task Preperation and implementation
