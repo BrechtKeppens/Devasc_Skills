@@ -101,9 +101,9 @@ curl -X DELETE "http://library.demo.local/api/v1/books/4" -H "accept: applicatio
 #### Post book response
 We post a book reponse, we get code 200 success and it is now visible in Our books
 
-###	Task troubleshooting: curl api call wasn’t working -> worked after restart & sudo apt update
+### Task troubleshooting: curl api call wasn’t working -> worked after restart & sudo apt update
 
-###	Task verification:  
+### Task verification:  
 #### API calls: <br>
 GUI:
 ![GUI Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/GUIVerification.png)<br>
@@ -117,8 +117,8 @@ Curl:
 ###	Task preparation and implementation: 
 We make POST request with the api key
 
-
-
+![Post Request](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostRequest.png)
+![Post Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostVerification.png)
 
 
 ###	Task troubleshooting: 
