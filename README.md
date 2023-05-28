@@ -468,17 +468,18 @@ Install Vmware if needed, virtualbox will not work for this lab
 ### ● Task verification
 
 ## 7.2 YANG
-● Task preparation and implementation
+### ● Task preparation and implementation
+We are now gonna review the yang code on the following link: <br>
 https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1693/ietf-interfaces.yang
-We are now gonna review the yang code on the following link
+Use this command to copy the yang file to your VM: <br>
 `wget https://raw.githubusercontent.com/YangModels/yang/master/vendor/cisco/xe/1693/ietf-interfaces.yang`
-Use the command above to copy the yang file to your VM
-`pyang -f tree ietf-interfaces.yang`
 
+`pyang -f tree ietf-interfaces.yang`
 Using this command we can view the yang code in the tree format, which is much more readable
 
-● Task troubleshooting
-● Task verification
+### ● Task troubleshooting
+None needed
+### ● Task verification
 
 ## 7.3 NETCONFIG
 ● Task preparation and implementation
