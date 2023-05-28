@@ -481,9 +481,107 @@ None needed
 ### ● Task verification
 
 ## 7.3 NETCONFIG
-● Task preparation and implementation
-● Task troubleshooting
+### ● Task preparation and implementation
+1.SSH to the vm using ssh cisco@ip and type Netconf-yang to start the daemon. You can also type this command in the vm directly.
+2. Now we can connect to Netconf using the ssh command: ssh cisco@ip -p 830 -s netconf
+3. Now we send a hello message to start a Netconf session, past the following code into the ssh prompt:
+```
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<capabilities>
+<capability>urn:ietf:params:netconf:base:1.0</capability>
+</capabilities>
+</hello>
+]]>]]>
+Confirm the session using show Netconf-yang sessions
+```
+Now we’re gonna send a rpc get message:
+```
+<rpc message-id="103" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<get>
+<filter>
+<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces"/>
+</filter>
+</get>
+</rpc>
+]]>]]>
+```
+We get an xml response, we prettify this using: https://jsonformatter.org/xml-pretty-print
+This is way more readable.
+
+To close our session we send the following rpc message:
+```
+<rpc message-id="9999999" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<close-session />
+</rpc>
+```
+Now we’re gonna use ncclient for our connection, we verify it’s installed by running the following command on our VM: `pip3 list --format=columns | more`
+
+1. We make a new dir in our devnet-src folder using mkdir Netconf
+2. We make a new python file with the following code;
+```
+from ncclient import manager
+m = manager.connect(
+host="192.168.199.128",
+port=830,
+username="cisco",
+password="cisco123!",
+hostkey_verify=False
+)
+print("#Supported Capabilities (YANG models):")
+for capability in m.server_capabilities:
+print(capability)
+```
+Now we save & run this file in vscode terminal
+cd Netconf
+Python3 filename (ncclient-netconf.py)
+netconf_reply = m.get_config(source="running")
+print(netconf_reply)
+now we replace the code we were using with this^
+now we’re gonna prettify it using a python function:
+import the module by adding this to the start of the script: 
+import xml.dom.minidom
+now we add the following code instead of the print function
+///////////////
+We add the following code to replace the hostname:
+netconf_hostname = """
+<config>
+<native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+<hostname>NEWHOSTNAME</hostname>
+</native>
+</config>
+"""
+netconf_reply = m.edit_config(target="running", config=netconf_hostname)
+
+Now we’re gonna configure a new loopback interface using ncclient:
+
+netconf_loopback = """
+<config>
+<native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+<interface>
+<Loopback>
+<name>1</name>
+<description>My first NETCONF loopback</description>
+<ip>
+<address>
+<primary>
+<address>10.1.1.1</address>
+<mask>255.255.255.0</mask>
+</primary>
+</address>
+</ip>
+</Loopback>
+</interface>
+</native>
+</config>
+"""
+netconf_reply = m.edit_config(target="running", config=netconf_loopback)
+print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
+We add the following code to our script and execute it
+
+
+● Task troubleshooting None required
 ● Task verification
+
 
 ## 7.4 RESTCONFIG
 ● Task preparation and implementation
