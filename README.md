@@ -466,7 +466,7 @@ Install Vmware if needed, virtualbox will not work for this lab
 2. I checked Live CD/DVD which made me encounter some issues, these were resolved when I unchecked the option
 3. I did not get an ip address assigned to my adapter in virtualbox, I switched to vmware and this solved the issue 
 ### ● Task verification
-<screenshot>
+
 ## 7.2 YANG
 ● Task preparation and implementation
 https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1693/ietf-interfaces.yang
