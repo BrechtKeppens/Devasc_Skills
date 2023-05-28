@@ -532,17 +532,23 @@ for capability in m.server_capabilities:
 print(capability)
 ```
 Now we save & run this file in vscode terminal
+```
 cd Netconf
 Python3 filename (ncclient-netconf.py)
+```
+We replace the code after the m = statement with this:
+```
 netconf_reply = m.get_config(source="running")
 print(netconf_reply)
-now we replace the code we were using with this^
-now we’re gonna prettify it using a python function:
+```
+Now we’re gonna prettify it using a python function:
+```
 import the module by adding this to the start of the script: 
 import xml.dom.minidom
-now we add the following code instead of the print function
-///////////////
-We add the following code to replace the hostname:
+```
+
+This is how we replace a hostname using ncclient:
+```
 netconf_hostname = """
 <config>
 <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
@@ -551,9 +557,9 @@ netconf_hostname = """
 </config>
 """
 netconf_reply = m.edit_config(target="running", config=netconf_hostname)
-
+```
 Now we’re gonna configure a new loopback interface using ncclient:
-
+```
 netconf_loopback = """
 <config>
 <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
@@ -576,14 +582,126 @@ netconf_loopback = """
 """
 netconf_reply = m.edit_config(target="running", config=netconf_loopback)
 print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
-We add the following code to our script and execute it
+```
 
 
-● Task troubleshooting None required
-● Task verification
+### ● Task troubleshooting None required
+### ● Task verification
+screenshot
 
 
 ## 7.4 RESTCONFIG
-● Task preparation and implementation
+### ● Task preparation and implementation
+First we verify connectivity by pinging 192.168.199.128
+Then we ssh using ssh cisco@ip(192.168.199.128)
+Verify the RestCONF daemons are running using:`show platform software yang-management process`
+ 
+We enter `conf t` and then `restconf` to enable restconf
+Now we enter ip `http secure-server` to enable the https server
+And ip `http authentication local` to specify the server should use the local authentication database
+
+1. We go into postman settings, File>Settings>General> SSL certificate verification OFF
+2. Now that we’ve configured postman. Lets go to the launchpad.
+3. Click the + sign to open a GET untitled request
+4. We enter `https://192.168.199.128/restconf/` in the enter request url field.
+5. Now we click the authorization tab, next to params  
+6. Select basic auth, username: cisco, password: cisco123!
+7. Verify that content type key accept with application/yand-data+json is still there
+We send the request and get this response:
+```
+{
+	"ietf-restconf:restconf": {
+		"data": {},
+		"operations: {},
+		"yang-library-version": "2016-06-21"
+	}
+}
+```
+Now we add: data/ietf-interfaces:interfaces after restconf/ in the url: `https://192.168.199.128/restconf/data/ietf-interfaces:interfaces`
+This retrieves the interfaces information
+We can try getting the information for a specific interface, by adding `/interfaces=<interface name>`
+We use GigabitEthernet1 for the task verification.
+
+We are now going to assign a static ip address to our interface instead of dhcp by using:
+`ip address 192.168.199.128 255.255.255.0` in config mode for GE/1 interface
+
+Now we will add a loopback interface with a PUT request, lets enter the following url: `https://192.168.56.101/restconf/data/ietf-interfaces:interfaces/interface=Loopback1` to address the loopback interface
+We enter the following json code in BODY:
+```
+{
+   "ietf-interfaces:interface": {
+     "name": "Loopback1",  
+     "description": "My first RESTCONF loopback",
+     "type": "iana-if-type:softwareLoopback",
+     "enabled": true,
+     "ietf-ip:ipv4": {
+       "address": [
+         {
+          "ip": "10.1.1.1",
+          "netmask": "255.255.255.0"
+         }
+        ]
+       },
+    "ietf-ip:ipv6": {}
+}
+```
+Click send, we get status 201: created
+
+Now we are going to create a python script to make a GET request:
+```
+import json
+import requests
+requests.packages.urllib3.disable_warnings()
+api_url = https://192.168.199.128/restconf/data/ietf-interfaces:interfaces
+headers = { "Accept": "application/yang-data+json",
+"Content-type":"application/yang-data+json"
+}
+basicauth = ("cisco", "cisco123!")
+resp = requests.get(api_url, auth=basicauth, headers=headers, verify=False)
+print(resp)
+response_json = resp.json()
+print(json.dumps(response_json, indent=4))
+```
+We import the json and requests module and disable ssl cert warnings
+We create the api url variable, and create the dictionary variable for the headers and basicauth for authentication purposes.
+
+Python PUT request
+
+We build a different script for this:
+```
+import json
+import requests
+requests.packages.urllib3.disable_warnings()
+api_url = "https://192.168.199.128/restconf/data/ietf-interfaces:interfaces/interface=Loopback2"
+headers = { "Accept": "application/yang-data+json",
+"Content-type":"application/yang-data+json"
+}
+basicauth = ("cisco", "cisco123!")
+yangConfig = {
+    "ietf-interfaces:interface": {
+        "name": "Loopback2",
+        "description": "My second RESTCONF loopback",
+        "type": "iana-if-type:softwareLoopback",
+        "enabled": True,
+        "ietf-ip:ipv4": {
+            "address": [
+                {
+                    "ip": "10.2.1.1",
+                    "netmask": "255.255.255.0"
+                }
+            ]
+        },
+        "ietf-ip:ipv6": {}
+    }
+}
+resp = requests.put(api_url, data=json.dumps(yangConfig), auth=basicauth,
+headers=headers, verify=False)
+if(resp.status_code >= 200 and resp.status_code <= 299):
+    print("STATUS OK: {}".format(resp.status_code))
+else:
+    print('Error. Status Code: {} \nError message:{}'.format(resp.status_code,resp.json()))
+```
 ● Task troubleshooting
+
 ● Task verification
+
