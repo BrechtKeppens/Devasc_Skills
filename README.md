@@ -263,6 +263,7 @@ lab-ra09-c-r03-confg
 
 
 ### • Task Troubleshooting:
+---
 #### - Problem 1: Unable to connect to teachers' switch.
 ##### Cause: Switch ports were down by default.
 ##### Solution: Enter no shutdown on the port in question.
