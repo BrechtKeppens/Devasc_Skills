@@ -85,18 +85,14 @@ Install the VM
 ### • Task verification:
 ![Lab 1 - Python Experiments Task 4 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task4_Verification_1.png)
 # Lab 2 - Explore rest APIs with API-simulator and postman
-##2.1 Explore API Documentation Using the API Simulator
+## 2.1 Explore API Documentation Using the API Simulator
 ### •  Task preparation and implementation:
- 
- 
-
+#### API call using GUI
 We visit library.demo.local, it puts us in the Our Books tab. Then we click `Click here for API docs` and click /api/v1 > GET /books
-
 Now we can make our first API call using the GET /books API (GUI) > Try it out > Execute:
-
- 
-We make our first API call with curl 
-Post a book response:
+#### API call using curl
+We make our first API call with curl using `curl -X get "http://library.demo.local/api/v1/books?includeISBN=true" -H accept: application/json`
+We post a book response, we get code 200 success
  
 Code 200 > Success!
  Visible in our books now 
