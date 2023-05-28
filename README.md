@@ -9,6 +9,7 @@
 - Python IDLE
 
 ### • Task preparation and implementation:
+First install devasc VM, then
 1. Update & upgrade to prevent errors: `sudo apt update && sudo apt upgrade`
 2. Install Python & PIP: `sudo apt install python3 python3-pip`
 3. Install Visual Studio Code: `sudo snap install --classic code`
@@ -84,7 +85,35 @@ Install the VM
 ### • Task verification:
 ![Lab 1 - Python Experiments Task 4 Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task4_Verification_1.png)
 # Lab 2 - Explore rest APIs with API-simulator and postman
-A
+##2.1 Explore API Documentation Using the API Simulator
+### •  Task preparation and implementation:
+ 
+ 
+
+We visit library.demo.local, it puts us in the Our Books tab. Then we click `Click here for API docs` and click /api/v1 > GET /books
+
+Now we can make our first API call using the GET /books API (GUI) > Try it out > Execute:
+
+ 
+We make our first API call with curl 
+Post a book response:
+ 
+Code 200 > Success!
+ Visible in our books now 
+Also Get books shows these
+
+curl -X DELETE "http://library.demo.local/api/v1/books/4" -H "accept: application/json" -H "X-API-KEY: cisco|7F8RljSITKTpnaa_YJp8fCcgkUrmauZ4wlx6vopD1yk"
+
+Deleting books by id through curl instead of dashboard
+
+
+
+•	Task troubleshooting: curl api call wasn’t working -> worked after restart & sudo apt update
+
+•	Task verification:  
+
+
+
 
 # Lab 3 - Python Review - Development tools and Classes
 ## 3.1 Python Programming Review
@@ -347,7 +376,7 @@ Python3 -m unittest --help
 
 #### • Task troubleshooting: Authentication updated so we fixed it with personal access token creation: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-#### • Task verification: Code explained above
+#### • Task verification: Code explained above + git working as you can see, we are using it to document
 
 # Lab 6 - Python Network automation with Netmiko
 ### • Task Preperation and implementation
