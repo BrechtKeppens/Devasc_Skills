@@ -450,3 +450,31 @@ connection.enable()
 ### • Task troubleshooting
 Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it worked
 ### • Task verification: Code explained above
+# Lab 7 YANG, NETCONFIG and RESTCONFIG
+
+## 7.1 Install CSR1000v VM
+### ● Task preparation and implementation
+.IOVA && .iso file downloaded from the teachers onedrive
+Install Vmware if needed, virtualbox will not work for this lab
+1.	Import the .iova file to vmware
+2.	Go to VM settings and click the first CD/DVD in the list, replace the current iso file with the one downloaded from your course instructor	
+### ● Task troubleshooting
+1. We needed an ISO file which the teacher did not have access to but he ended up finding a downloadable version online. 
+2. I checked Live CD/DVD which made me encounter some issues, these were resolved when I unchecked the option
+3. I did not get an ip address assigned to my adapter in virtualbox, I switched to vmware and this solved the issue 
+### ● Task verification
+
+## 7.2 YANG
+● Task preparation and implementation
+● Task troubleshooting
+● Task verification
+
+## 7.3 NETCONFIG
+● Task preparation and implementation
+● Task troubleshooting
+● Task verification
+
+## 7.4 RESTCONFIG
+● Task preparation and implementation
+● Task troubleshooting
+● Task verification
