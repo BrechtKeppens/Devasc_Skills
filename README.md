@@ -105,9 +105,9 @@ We post a book reponse, we get code 200 success and it is now visible in Our boo
 
 ### Task verification:  
 #### API calls: <br>
-GUI:
+#### GUI:
 ![GUI Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/GUIVerification.png)<br>
-Curl: 
+#### Curl: 
 ![Curl Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/CurlVerification.png)
 #### Response:
 ![Response Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/ResponseVerification.png)
