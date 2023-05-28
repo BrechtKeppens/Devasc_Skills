@@ -118,7 +118,6 @@ Curl:
 We make POST request with the api key
 
 ![Post Request](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostRequest.png)
-![Post Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostVerification.png)
 
 
 ###	Task troubleshooting: 
@@ -127,9 +126,9 @@ Method not allowed but was using get instead of post when trying to retrieve API
 ###	Task verification: 
 Confirmation of POST request, id 4 is back in there now. We removed it in the last excercise :
 
+![Post Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostVerification.png)
 
-
-
+## 2.3 Use python to add 100 books to the API simulator
 
 
 # Lab 3 - Python Review - Development tools and Classes
