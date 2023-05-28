@@ -592,13 +592,13 @@ screenshot
 
 ## 7.4 RESTCONFIG
 ### ● Task preparation and implementation
-First we verify connectivity by pinging 192.168.199.128
-Then we ssh using ssh cisco@ip(192.168.199.128)
+First we verify connectivity by pinging 192.168.199.128 <br>
+Then we ssh using ssh cisco@ip(192.168.199.128) <br> 
 Verify the RestCONF daemons are running using:`show platform software yang-management process`
  
-We enter `conf t` and then `restconf` to enable restconf
-Now we enter ip `http secure-server` to enable the https server
-And ip `http authentication local` to specify the server should use the local authentication database
+We enter `conf t` and then `restconf` to enable restconf <br>
+Now we enter ip `http secure-server` to enable the https server <br>
+And ip `http authentication local` to specify the server should use the local authentication database <br>
 
 1. We go into postman settings, File>Settings>General> SSL certificate verification OFF
 2. Now that we’ve configured postman. Lets go to the launchpad.
