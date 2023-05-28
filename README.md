@@ -104,11 +104,15 @@ We post a book reponse, we get code 200 success and it is now visible in Our boo
 ###	Task troubleshooting: curl api call wasn’t working -> worked after restart & sudo apt update
 
 ###	Task verification:  
-API calls:
-
-Response:
-
-Delete book:
+#### API calls:
+GUI:
+[GUI Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/GUIVerification.png)
+Curl:
+[Curl Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/CurlVerification.png)
+#### Response:
+[Response Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/ResponseVerification.png)
+#### Delete book:
+[Deleted Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/DeletedVerification.png)
 ## 2.2 Use Postman to make API calls to the API simulator
 ###	Task preparation and implementation: 
 We make POST request with the api key
