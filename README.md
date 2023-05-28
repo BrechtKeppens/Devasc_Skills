@@ -110,16 +110,18 @@ Response:
 
 Delete book:
 ## 2.2 Use Postman to make API calls to the API simulator
-•	Task preparation and implementation: 
-POST request with api key
+###	Task preparation and implementation: 
+We make POST request with the api key
 
 
 
 
 
-###	Task troubleshooting: Method not allowed but was using get instead of post when trying to retrieve API Key
+###	Task troubleshooting: 
+Method not allowed but was using get instead of post when trying to retrieve API Key
 
-###	Task verification: Confirmation of POST request, id 4 is back in there now. We removed it in the last excercise :
+###	Task verification: 
+Confirmation of POST request, id 4 is back in there now. We removed it in the last excercise :
 
 
 
