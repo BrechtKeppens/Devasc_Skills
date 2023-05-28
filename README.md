@@ -91,22 +91,37 @@ Install the VM
 We visit library.demo.local, it puts us in the Our Books tab. Then we click `Click here for API docs` and click /api/v1 > GET /books
 Now we can make our first API call using the GET /books API (GUI) > Try it out > Execute:
 #### API call using curl
-We make our first API call with curl using `curl -X get "http://library.demo.local/api/v1/books?includeISBN=true" -H accept: application/json`
-We post a book response, we get code 200 success
- 
-Code 200 > Success!
- Visible in our books now 
-Also Get books shows these
+We make our first API call with curl using `curl -X get "http://library.demo.local/api/v1/books?includeISBN=true" -H accept: application/json` this returns the books with ISBN true
 
+Visible in our books now 
+Also Get books shows these
+#### Delete book using curl and API key
 curl -X DELETE "http://library.demo.local/api/v1/books/4" -H "accept: application/json" -H "X-API-KEY: cisco|7F8RljSITKTpnaa_YJp8fCcgkUrmauZ4wlx6vopD1yk"
 
-Deleting books by id through curl instead of dashboard
+#### Post book response
+We post a book reponse, we get code 200 success and it is now visible in Our books
+
+###	Task troubleshooting: curl api call wasn’t working -> worked after restart & sudo apt update
+
+###	Task verification:  
+API calls:
+
+Response:
+
+Delete book:
+## 2.2 Use Postman to make API calls to the API simulator
+•	Task preparation and implementation: 
+POST request with api key
 
 
 
-•	Task troubleshooting: curl api call wasn’t working -> worked after restart & sudo apt update
 
-•	Task verification:  
+
+###	Task troubleshooting: Method not allowed but was using get instead of post when trying to retrieve API Key
+
+###	Task verification: Confirmation of POST request, id 4 is back in there now. We removed it in the last excercise :
+
+
 
 
 
