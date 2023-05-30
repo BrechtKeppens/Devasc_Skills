@@ -206,14 +206,22 @@ None needed
 [While.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/while.py)<br>
 ## 3.2 Explore Python Development Tools
 ### • Task preparation and implementation:
-`python3 -V` Check python version <br>
-`which python3`See local python environment <br>
-`python3 -m venv <name> ` Create a python virtual environment <br>
-`source devfun/bin/activate` Activate the python environment, your prompt will now change <br>
-`pip3 freeze` Verify the packages that are installed in the virtual environment <br>
-`pip3 install <package name>` Will install a package in the virtual environment <br>
-`deactivate` Will Deactivate the virtual environment <br>
-`python3 -m pip freeze` Verify the packages that are installed in the system environment
+#### Check python version <br>
+`python3 -V`
+#### See local python environment <br>
+`which python3`
+#### Create a python virtual environment <br>
+`python3 -m venv <name> `
+#### Activate the python environment, your prompt will now change <br>
+`source devfun/bin/activate`
+#### Verify the packages that are installed in the virtual environment <br> 
+`pip3 freeze`
+#### Install a package in the virtual environment <br>
+`pip3 install <package name>`
+#### Deactivate the virtual environment <br>
+`deactivate` 
+#### Verify the packages that are installed in the system environment
+`python3 -m pip freeze`
 ### • Task Troubleshooting:
 
 ### • Task Verification:
