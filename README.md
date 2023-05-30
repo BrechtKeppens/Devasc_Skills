@@ -213,7 +213,7 @@ None needed
 #### Create a python virtual environment <br>
 `python3 -m venv <name> `
 #### Activate the python environment, your prompt will now change <br>
-`source devfun/bin/activate`
+`source <name>/bin/activate`
 #### Verify the packages that are installed in the virtual environment <br> 
 `pip3 freeze`
 #### Install a package in the virtual environment <br>
@@ -222,6 +222,13 @@ None needed
 `deactivate` 
 #### Verify the packages that are installed in the system environment
 `python3 -m pip freeze`
+#### Sharing a virtual environment
+1. Verify that the virtual environment is active: `source <name>/bin/activate`
+2. Send the output of the pip3 freeze command to a text file called requirements.txt: `pip3 freeze > requirements.txt`
+3. Deactivate the environment: `deactivate`
+4. Create and activate a new python virtual environment: `python3 -m venv <newname>`&&`source <newname>/bin/activate`
+5. Install the same packages in the new virtual environment: `pip3 install -r requirements.txt`
+6. Verify the packages are installed: `pip3 freeze`
 ### • Task Troubleshooting:
 
 ### • Task Verification:
