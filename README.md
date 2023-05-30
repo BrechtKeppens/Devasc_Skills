@@ -199,7 +199,6 @@ counts to 10
 ### • Task Troubleshooting
 None needed
 ### • Task Verification
-[Function.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/function.py)<br>
 [IfElif.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/ifelif.py)<br>
 [List.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/list.py)<br>
 [MethodInClass.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/methodinclass.py)<br>
@@ -239,9 +238,10 @@ None needed
 Documented findings and important commands:
 #### Define & call a function:
 ```
-Def Newfunction:
-	Print(“Function called”)
-Newfunction()
+def new_function():
+    print("Function called")
+
+new_function()
 ```
 Here we define a function "Newfunction" and call it using Newfunction()
 #### Define & call method in a class:
@@ -261,7 +261,9 @@ Here we define a Person class with a constructor (__init__) that takes name and 
 None needed
 
 ### • Task Verification:
-Code explained above
+[Function.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Function.py)<br>
+[methodinclass.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/methodinclass.py)<br>
+
 
 # Lab 4 - Network Infrastructure and troubleshooting
 ## • Task Preparation and implementation:
