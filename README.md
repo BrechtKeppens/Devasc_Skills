@@ -225,14 +225,14 @@ None needed
 #### Sharing a virtual environment
 1. Verify that the virtual environment is active: `source <name>/bin/activate`
 2. Send the output of the pip3 freeze command to a text file called requirements.txt: `pip3 freeze > requirements.txt`
-3. Deactivate the environment: `deactivate`
+3. Deactivate the current environment: `deactivate`
 4. Create and activate a new python virtual environment: `python3 -m venv <newname>`&&`source <newname>/bin/activate`
 5. Install the same packages in the new virtual environment: `pip3 install -r requirements.txt`
 6. Verify the packages are installed: `pip3 freeze`
 ### • Task Troubleshooting:
 
 ### • Task Verification:
-
+![Lab3_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab3_Verification.png)
 ## 3.3 Explore Python Classes
 
 ### • Task preparation and implementation:
