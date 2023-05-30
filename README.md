@@ -199,8 +199,13 @@ counts to 10
 ### • Task Troubleshooting
 None needed
 ### • Task Verification
-Code explained above
+[Function.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/function.py)
+[IfElif.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/ifelif.py)
+[List.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/list.py)
+[MethodInClass.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/methodinclass.py)
+[While.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/while.py)
 ## 3.2 Explore Python Development Tools
+## 3.3 Explore Python Classes
 
 ### • Task preparation and implementation:
 Documented findings and important commands:
