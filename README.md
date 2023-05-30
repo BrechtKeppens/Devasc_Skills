@@ -199,12 +199,25 @@ counts to 10
 ### • Task Troubleshooting
 None needed
 ### • Task Verification
-[Function.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/function.py)
-[IfElif.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/ifelif.py)
-[List.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/list.py)
-[MethodInClass.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/methodinclass.py)
-[While.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/while.py)
+[Function.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/function.py)<br>
+[IfElif.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/ifelif.py)<br>
+[List.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/list.py)<br>
+[MethodInClass.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/methodinclass.py)<br>
+[While.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/while.py)<br>
 ## 3.2 Explore Python Development Tools
+### • Task preparation and implementation:
+`python3 -V` Check python version <br>
+`which python3`See local python environment <br>
+`python3 -m venv <name> ` Create a python virtual environment <br>
+`source devfun/bin/activate` Activate the python environment, your prompt will now change <br>
+`pip3 freeze` Verify the packages that are installed in the virtual environment <br>
+`pip3 install <package name>` Will install a package in the virtual environment <br>
+`deactivate` Will Deactivate the virtual environment <br>
+`python3 -m pip freeze` Verify the packages that are installed in the system environment
+### • Task Troubleshooting:
+
+### • Task Verification:
+
 ## 3.3 Explore Python Classes
 
 ### • Task preparation and implementation:
