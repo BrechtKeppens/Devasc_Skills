@@ -723,7 +723,7 @@ print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
 ### • Task troubleshooting 
 None required
 ### • Task verification
-screenshot
+![Lab7Netconf_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7Netconf_Verification.png)
 
 
 ## 7.4 RESTCONF
@@ -841,9 +841,9 @@ else:
 None needed
 ### • Task verification
 #### Postman GET
-
-#### Loopback interface creation
-
+![Lab7PostmanGET_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7PostmanGET_Verification.png)
+![Lab7Loopback]
 #### Python GET
-
+![Lab7PythonGet_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7PythonGet_Verification.png)
 #### Python PUT
+![Lab7PythonPUT_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7PythonPUT_Verification.png)
