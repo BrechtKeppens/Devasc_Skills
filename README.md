@@ -291,7 +291,7 @@ None needed
 5. Install the same packages in the new virtual environment: `pip3 install -r requirements.txt`
 6. Verify the packages are installed: `pip3 freeze`
 ### • Task Troubleshooting:
-
+None needed
 ### • Task Verification:
 ![Lab3_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab3_Verification.png)
 ## 3.3 Explore Python Classes
