@@ -190,6 +190,7 @@ for i in range(4, 105):
 
 ```
 ### • Task troubleshooting:
+None needed
 ### • Task verification:
 [add100books.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/add100RandomBooks.py)
 # Lab 3 - Python Review - Development tools and Classes
