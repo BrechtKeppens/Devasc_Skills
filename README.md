@@ -463,7 +463,7 @@ copy tftp: running-config
 [lab-ra09-c-sw03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-sw03-confg)
 # Lab 5 - Software Development and Design Content
 ## 5.1 Software Version Control with Git
-#### • Task preparation & implementation
+### • Task preparation & implementation
 `git config –global {user.name/user.email} “email/name`
 
 #### Explanation: Puts email/name in the git config.
@@ -520,9 +520,9 @@ They start with “test_”
 ##### What command will list all of the command line options for unittest shown in the following output?
 Python3 -m unittest --help
 
-#### • Task troubleshooting: Authentication updated so we fixed it with personal access token creation: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+### • Task troubleshooting: Authentication updated so we fixed it with personal access token creation: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-#### • Task verification: Code explained above + git working as you can see, we are using it to document
+### • Task verification: Code explained above + git working as you can see, we are using it to document
 
 # Lab 6 - Python Network automation with Netmiko
 ### • Task Preperation and implementation
