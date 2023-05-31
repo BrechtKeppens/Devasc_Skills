@@ -578,7 +578,9 @@ See previous scripts, we always connect using a dictionary
 - Execute a script with statements (if, ifelse, else)
 [ifelse.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/ifelse.py)
 ## 6.4 Create an exciting script as a network engineer
-- Create an exciting and challenging script that a network engineer in a programmable era would use every day. Surprise your lecturer!
+This script allows us to choose a show command and a device to run it on. I believe this makes for an exciting script and i challenged myself.
+[Excitingscript.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Excitingscript.py)
+
 ### • Task troubleshooting
 Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it worked
 ### • Task verification: Code explained above
