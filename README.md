@@ -328,12 +328,12 @@ None needed
 
 
 # Lab 4 - Network Infrastructure and troubleshooting
-## • Task Preparation and implementation:
+### • Task Preparation and implementation:
 #### Install, configure and test the network infrastructure based on the network drawing	
 ![Network Plan](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/Networkplan.png)
 
 #### Proactively determine what is needed to ensure the continuity of the system and network infrastructure
-HSRP has been configured on the routers to ensure redundancy. This also supplies the netwerk with scalability for the routers.
+- HSRP has been configured on the routers to ensure redundancy. This also supplies the netwerk with scalability for the routers.
 ```
 interface g0/0.10
 description Management vlan subinterface
@@ -352,7 +352,7 @@ standby 40 ip 172.16.9.49
 standby 40 priority 150
 exit
 ```
-We configure a domain name using the following command:
+- We configure a domain name using the following command:
 `ip domain name pxl.be`
 
 ### Apply best practices to configuration and network security
@@ -457,9 +457,9 @@ copy tftp: running-config
 ##### Solution: Disable exec timeout
 ---
 ### • Task Verification:
-####Router config
+#### Router config
 [lab-ra09-c-r03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg)
-####Switch config
+#### Switch config
 [lab-ra09-c-sw03-confg](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-sw03-confg)
 # Lab 5 - Software Development and Design Content
 ## 5.1 Software Version Control with Git
@@ -585,7 +585,7 @@ Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it wo
 # Lab 7 YANG, NETCONFIG and RESTCONFIG
 
 ## 7.1 Install CSR1000v VM
-### ● Task preparation and implementation
+### • Task preparation and implementation
 .IOVA && .iso file downloaded from the teachers onedrive
 Install Vmware if needed, virtualbox will not work for this lab
 1.	Import the .iova file to vmware
@@ -593,14 +593,14 @@ Install Vmware if needed, virtualbox will not work for this lab
 3.	Launch VM
 4.	Ping Devasc machine to ensure connectivity
 5.	Visit the CSR1000v webinterface (https://ip)
-### ● Task troubleshooting
+### • Task troubleshooting
 1. We needed an ISO file which the teacher did not have access to but he ended up finding a downloadable version online. 
 2. I checked Live CD/DVD which made me encounter some issues, these were resolved when I unchecked the option
 3. I did not get an ip address assigned to my adapter in virtualbox, I switched to vmware and this solved the issue 
-### ● Task verification
-
+### • Task verification
+![VMVerification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7VM_Verification.png)
 ## 7.2 YANG
-### ● Task preparation and implementation
+### • Task preparation and implementation
 We are now gonna review the yang code on the following link: <br>
 https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1693/ietf-interfaces.yang <br>
 Use this command to copy the yang file to your VM: <br>
@@ -608,12 +608,12 @@ Use this command to copy the yang file to your VM: <br>
 Using this command we can view the yang code in the tree format, which is much more readable:
 `pyang -f tree ietf-interfaces.yang`
 
-### ● Task troubleshooting
+### • Task troubleshooting
 None needed
-### ● Task verification
+### • Task verification
 
-## 7.3 NETCONFIG
-### ● Task preparation and implementation
+## 7.3 NETCONF
+### • Task preparation and implementation
 1.SSH to the vm using ssh cisco@ip and type Netconf-yang to start the daemon. You can also type this command in the vm directly.
 2. Now we can connect to Netconf using the ssh command: ssh cisco@ip -p 830 -s netconf
 3. Now we send a hello message to start a Netconf session, past the following code into the ssh prompt:
@@ -717,14 +717,14 @@ print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
 ```
 
 
-### ● Task troubleshooting 
+### • Task troubleshooting 
 None required
-### ● Task verification
+### • Task verification
 screenshot
 
 
-## 7.4 RESTCONFIG
-### ● Task preparation and implementation
+## 7.4 RESTCONF
+### • Task preparation and implementation
 First we verify connectivity by pinging 192.168.199.128 <br>
 Then we ssh using ssh cisco@ip(192.168.199.128) <br> 
 Verify the RestCONF daemons are running using:`show platform software yang-management process`
@@ -834,7 +834,13 @@ if(resp.status_code >= 200 and resp.status_code <= 299):
 else:
     print('Error. Status Code: {} \nError message:{}'.format(resp.status_code,resp.json()))
 ```
-### ● Task troubleshooting
+### • Task troubleshooting
 None needed
-### ● Task verification
+### • Task verification
+#### Postman GET
 
+#### Loopback interface creation
+
+#### Python GET
+
+#### Python PUT
