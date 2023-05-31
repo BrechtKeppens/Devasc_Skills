@@ -129,18 +129,25 @@ Confirmation of POST request, id 4 is back in there now. We removed it in the la
 ![Post Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostVerification.png)
 
 ## 2.3 Use python to add 100 books to the API simulator
+We will be using the following script to add 100 random books to to the API
+Let's look at what it does.
+1. Here we can see faker being imported, along with requests and json. `Faker` is used to generate fake data and will be used to generate the 100 random books. `json` provides functions to work with JSON data, `requests` is used for API requests
 ```
 #!/usr/bin/env python3
 
 import requests
 import json
 from faker import Faker
-
-
+```
+2. We define the variables APIHOST and LOGIN & PASSWORD to authenticate to the API
+```
 APIHOST = "http://library.demo.local"
 LOGIN = "cisco"
 PASSWORD = "Cisco123!"
-
+```
+3. We define the getAuthToken function sends a POST request to the API to obtain an authentication token.
+If the status code is 200 it returns the token, otherwise it raises an exception.
+```
 def getAuthToken():
     authCreds = (LOGIN, PASSWORD)
     r = requests.post(
@@ -151,7 +158,9 @@ def getAuthToken():
         return r.json()["token"]
     else:
         raise Exception(f"Status code {r.status_code} and text {r.text}, while trying to Auth.")
-
+```
+4. We define the addBook() function, this sends a POST request to add a book to the API, using the api key and book details as arguments. The book is converted to JSON format and sent as the requests data. If the status code is 200 the function prints a message, otherwise it raises an exception.
+```
 def addBook(book, apiKey):
     r = requests.post(
         f"{APIHOST}/api/v1/books", 
@@ -165,18 +174,19 @@ def addBook(book, apiKey):
         print(f"Book {book} added.")
     else:
         raise Exception(f"Error code {r.status_code} and text {r.text}, while trying to add book {book}.")
-
-# Get the Auth Token Key
+```
+5. We use our getAuthToken() function to store an auth token in the apiKey variable.
+```
 apiKey = getAuthToken()
-
-# Using the faker module, generate random "fake" books
+```
+6. Now we generate 100 random books using faker, each with a unique id and a random title, author and isbn. Then we add it to the API.
+```
 fake = Faker()
 for i in range(4, 105):
     fakeTitle = fake.catch_phrase()
     fakeAuthor = fake.name()
     fakeISBN = fake.isbn13()
     book = {"id":i, "title": fakeTitle, "author": fakeAuthor, "isbn": fakeISBN}
-    # add the new random "fake" book using the API
     addBook(book, apiKey) 
 
 ```
