@@ -572,9 +572,11 @@ connection.enable()
 
 [ExternalFile.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/ExternalFile.py)
 - Connect using a Python Dictionary
+See previous scripts, we always connect using a dictionary
 - Execute a script with Functions or classes
+[functionusage.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/functionusage.py)
 - Execute a script with statements (if, ifelse, else)
-
+[ifelse.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/ifelse.py)
 ## 6.4 Create an exciting script as a network engineer
 - Create an exciting and challenging script that a network engineer in a programmable era would use every day. Surprise your lecturer!
 ### • Task troubleshooting
