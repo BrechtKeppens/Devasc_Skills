@@ -843,12 +843,11 @@ else:
 None needed
 ### • Task verification
 #### Postman GET
-[Lab7PostmanGET_Verification](https://github.com/BrechtKeppens/Devasc_Skills/raw/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG/Lab7PostmanGET_Verification.png)
+![Lab7PostmanGET_Verification](https://github.com/BrechtKeppens/Devasc_Skills/raw/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG/Lab7PostmanGET_Verification.png)
 
 #### Python GET
-[Lab7PythonGet_Verification](https://github.com/BrechtKeppens/Devasc_Skills/raw/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG/Lab7PythonGet_Verification.png)
+![Lab7PythonGet_Verification](https://github.com/BrechtKeppens/Devasc_Skills/raw/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG/Lab7PythonGet_Verification.png)
 
 #### Python PUT
 ![Lab7PythonPUT_Verification](https://github.com/BrechtKeppens/Devasc_Skills/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG/Lab7PythonPUT_Verification.png)
-![Lab 1 - Python Experiments Task Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%201%20-%20Python%20Expirements/Task1_Verification_1.png)
 
