@@ -1,5 +1,5 @@
 
-### ! Disclaimer: all images are made using links and are not copy pasted as instructed, Lab 7 uses regularlinks for convenience !
+### ! Disclaimer: all images are made using links and are not copy pasted as instructed, Lab 7 uses regular links !
 # Lab 1 - Python Experiments
 
 ## 1.1 Install different tools/packages on Ubuntu DEVASC-LABVM:
