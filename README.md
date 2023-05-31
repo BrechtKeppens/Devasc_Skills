@@ -848,6 +848,6 @@ None needed
 #### Python GET
 ![Lab7PythonGet_Verification](https://github.com/BrechtKeppens/Devasc_Skills/raw/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG/Lab7PythonGet_Verification.png)
 
-#### Python PUT
+#### Python PUT to create loopback
 ![Lab7PythonPUT_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%20NETCONFIG%20and%20RESTCONFIG/Lab7PythonPUT_Verification.jpg)
 
