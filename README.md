@@ -125,10 +125,9 @@ Method not allowed but was using get instead of post when trying to retrieve API
 
 ###	Task verification: 
 Confirmation of POST request, id 4 is back in there now. We removed it in the last excercise :
-
 ![Post Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostVerification.png)
-
 ## 2.3 Use python to add 100 books to the API simulator
+### • Task preparation and implementation:
 We will be using the following script to add 100 random books to to the API
 Let's look at what it does.
 1. Here we can see faker being imported, along with requests and json. `Faker` is used to generate fake data and will be used to generate the 100 random books. `json` provides functions to work with JSON data, `requests` is used for API requests
@@ -190,6 +189,9 @@ for i in range(4, 105):
     addBook(book, apiKey) 
 
 ```
+### • Task troubleshooting:
+### • Task verification:
+[add100books.py](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/add100RandomBooks.py)
 # Lab 3 - Python Review - Development tools and Classes
 ## 3.1 Python Programming Review
 
