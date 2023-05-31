@@ -614,7 +614,7 @@ Using this command we can view the yang code in the tree format, which is much m
 ### • Task troubleshooting
 None needed
 ### • Task verification
-
+![Lab7yang_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7yang_Verification.png)
 ## 7.3 NETCONF
 ### • Task preparation and implementation
 1.SSH to the vm using ssh cisco@ip and type Netconf-yang to start the daemon. You can also type this command in the vm directly.
