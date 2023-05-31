@@ -583,7 +583,7 @@ This script allows us to choose a show command and a device to run it on. I beli
 
 ### • Task troubleshooting
 Netmiko wasn't connecting with initial VM settings, set adapter to NAT and it worked
-### • Task verification: Code explained above
+### • Task verification: Scripts above
 # Lab 7 YANG, NETCONFIG and RESTCONFIG
 
 ## 7.1 Install CSR1000v VM
