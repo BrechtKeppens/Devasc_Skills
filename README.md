@@ -598,7 +598,9 @@ Install Vmware if needed, virtualbox will not work for this lab
 2. I checked Live CD/DVD which made me encounter some issues, these were resolved when I unchecked the option
 3. I did not get an ip address assigned to my adapter in virtualbox, I switched to vmware and this solved the issue 
 ### • Task verification
-![Lab7VM_Verification.png](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7VM_Verification.png)
+![Lab7VM_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7VM_Verification.png)
+
+
 ## 7.2 YANG
 ### • Task preparation and implementation
 We are now gonna review the yang code on the following link: <br>
