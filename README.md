@@ -96,7 +96,7 @@ We make our first API call with curl using `curl -X get "http://library.demo.loc
 Visible in our books now 
 Also Get books shows these
 #### Delete book using curl and API key
-curl -X DELETE "http://library.demo.local/api/v1/books/4" -H "accept: application/json" -H "X-API-KEY: cisco|7F8RljSITKTpnaa_YJp8fCcgkUrmauZ4wlx6vopD1yk"
+`curl -X DELETE "http://library.demo.local/api/v1/books/4" -H "accept: application/json" -H "X-API-KEY: cisco|7F8RljSITKTpnaa_YJp8fCcgkUrmauZ4wlx6vopD1yk"`
 
 #### Post book response
 We post a book reponse, we get code 200 success and it is now visible in Our books
@@ -120,10 +120,10 @@ We make POST request with the api key
 ![Post Request](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostRequest.png)
 
 
-###	Task troubleshooting: 
+### • Task troubleshooting: 
 Method not allowed but was using get instead of post when trying to retrieve API Key
 
-###	Task verification: 
+### • Task verification: 
 Confirmation of POST request, id 4 is back in there now. We removed it in the last excercise :
 ![Post Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/PostVerification.png)
 ## 2.3 Use python to add 100 books to the API simulator
@@ -682,7 +682,8 @@ print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
 ```
 
 
-### ● Task troubleshooting None required
+### ● Task troubleshooting 
+None required
 ### ● Task verification
 screenshot
 
@@ -798,7 +799,7 @@ if(resp.status_code >= 200 and resp.status_code <= 299):
 else:
     print('Error. Status Code: {} \nError message:{}'.format(resp.status_code,resp.json()))
 ```
-● Task troubleshooting
-
-● Task verification
+### ● Task troubleshooting
+None needed
+### ● Task verification
 
