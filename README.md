@@ -334,12 +334,40 @@ None needed
 
 #### Proactively determine what is needed to ensure the continuity of the system and network infrastructure
 HSRP has been configured on the routers to ensure redundancy. This also supplies the netwerk with scalability for the routers.
-
+```
+interface g0/0.10
+description Management vlan subinterface
+encapsulation dot1q 10
+ip address 172.16.9.4 255.255.255.240
+standby version 2
+standby 10 ip 172.16.9.1
+standby 10 priority 150
+exit
+interface g0/0.40
+description Data vlan subinterface
+encapsulation dot1q 40
+ip address 172.16.9.52 255.255.255.240
+standby version 2
+standby 40 ip 172.16.9.49
+standby 40 priority 150
+exit
+```
 We configure a domain name using the following command:
 `ip domain name pxl.be`
 
 ### Apply best practices to configuration and network security
-- Vlans have been configured for best practice segmentation
+- Vlans have been configured on the switch nfor best practice segmentation
+```
+vlan 10
+name "Management Segment Student Rack 09"
+exit
+vlan 40
+name "Data Users Segment Student Rack 09"
+exit
+vlan 99
+name native
+exit
+```
 - For security reasons we chose to use SSH 2.0 using the following commands:
 ```
 crypto key generate rsa 1024
@@ -362,7 +390,7 @@ username cisco password class.
 |                 | G0/1        | 10.199.66.109 | /    |
 | LAB-RA09-A-SW03 | VLAN10      | 172.16.9.7    | 10   |
 ### Make sure you can backup and restore device configuration from a backup environment
-Router:
+#### Router:
 ```
 en
 conf t
@@ -371,15 +399,20 @@ ip address 10.199.66.109 255.255.255.224
 no shutdown
 exit
 ip route 0.0.0.0 0.0.0.0 10.199.66.100
+exit
 copy tftp: running-config
-10.199.64.134
-lab-ra09-c-r03-confg
+>10.199.64.134
+>lab-ra09-c-r03-confg
+```
+After retrieving the config, enter the following to ensure connectivity:
+```
+conf t
 interface g0/1
 no shutdown
 interface g0/0
 no shutdown
 ```
-Switch:
+#### Switch:
 ```
 en
 conf t
@@ -399,8 +432,8 @@ switchport trunk native vlan 99
 no shutdown
 exit
 copy tftp: running-config
-10.199.64.134
-lab-ra09-c-r03-confg
+>10.199.64.134
+>lab-ra09-a-sw03-confg
 ```
 
 
