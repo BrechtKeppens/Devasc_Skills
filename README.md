@@ -600,7 +600,7 @@ Install Vmware if needed, virtualbox will not work for this lab
 2. I checked Live CD/DVD which made me encounter some issues, these were resolved when I unchecked the option
 3. I did not get an ip address assigned to my adapter in virtualbox, I switched to vmware and this solved the issue 
 ### • Task verification
-[Lab7VM_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7VM_Verification.png?raw=true)
+[Lab7VM_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%20NETCONFIG%20and%20RESTCONFIG/Lab7VM_Verification.png)
 
 
 
@@ -616,7 +616,7 @@ Using this command we can view the yang code in the tree format, which is much m
 ### • Task troubleshooting
 None needed
 ### • Task verification
-[Lab7yang_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7yang_Verification.png)
+[Lab7yang_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%20NETCONFIG%20and%20RESTCONFIG/Lab7yang_Verification.png)
 ## 7.3 NETCONF
 ### • Task preparation and implementation
 1.SSH to the vm using ssh cisco@ip and type Netconf-yang to start the daemon. You can also type this command in the vm directly.
@@ -725,7 +725,7 @@ print(xml.dom.minidom.parseString(netconf_reply.xml).toprettyxml())
 ### • Task troubleshooting 
 None required
 ### • Task verification
-[Lab7Netconf_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7Netconf_Verification.png)
+[Lab7Netconf_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%20NETCONFIG%20and%20RESTCONFIG/Lab7Netconf_Verification.png)
 
 
 ## 7.4 RESTCONF
@@ -843,10 +843,9 @@ else:
 None needed
 ### • Task verification
 #### Postman GET
-![Lab7PostmanGET_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG/Lab7PostmanGET_Verification.png)
-
+![Lab7PostmanGET_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7PostmanGET_Verification.png)
 #### Python GET
-![Lab7PythonGet_Verification](https://github.com/BrechtKeppens/Devasc_Skills/raw/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG/Lab7PythonGet_Verification.png)
+![Lab7PythonGet_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%2C%20NETCONFIG%20and%20RESTCONFIG%0A/Lab7PythonGet_Verification.png)
 
 #### Python PUT to create loopback
 ![Lab7PythonPUT_Verification](https://github.com/BrechtKeppens/Devasc_Skills/blob/main/Lab%207%20-%20YANG%20NETCONFIG%20and%20RESTCONFIG/Lab7PythonPUT_Verification.jpg)
